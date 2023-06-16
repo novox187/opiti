@@ -1,0 +1,252 @@
+
+/* INICIO */
+.rusia {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    align-items: center;
+    gap: 1px;
+    /* overflow: hidden; */
+    position: relative;
+    padding-top: 5%;
+    width: 100%;
+    /* height: 80vh; */
+    transition: 0.7s;
+    margin-bottom: 3%;
+    border-bottom: 3px double #f41;
+    padding-bottom: 3%;
+}
+
+.rusia__eslogan {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.rusia__slogan__center {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    right: 10%;
+    margin-right: 5%;
+
+}
+
+.rusia__titulo {
+    font-size: 300%;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.rusia__descripcion {
+    font-size: 100%;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.rusia__img__contenedor {
+    background-color: #f1f5f9;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ea3c12' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /*  width: 50%; */
+    padding: 50px 0px 0px 50px;
+    right: 0px;
+}
+
+.rusia__img {
+    border-radius: 15px 0px 0px 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* QUERY */
+/* 1200px */
+@media (max-width:1200px){
+    .rusia{
+        padding-top: 2%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .rusia__eslogan{
+        justify-content: center;
+        align-items: center;
+    }
+    .rusia__slogan__center{
+        position: static;
+        text-align: center;
+        width: 70%;
+    }
+    .rusia__img__contenedor{
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+        height: 70%;
+    }
+    .rusia__img{
+        border-radius: 15px 15px 15px 15px;
+        object-position:top;
+    }
+}
+
+/* --- --- CAROUSEL --- --- */
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+}
+
+.carousel {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-width: 100vw;
+	margin-bottom: 5em;
+}
+.derecha{
+	flex-direction:row-reverse;
+}
+
+.carousel__contenedor {
+	display: block;
+	position: relative;
+	width: 44%;
+    /* height: 30rem; */
+	margin: 0 4em;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #000000;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista,
+.carousel__lista2 {
+    height: 15rem;
+	/* overflow: hidden; */
+}
+
+.carousel__elemento {
+	text-align: center;
+    height: 15rem;
+}
+
+.carousel__elemento >img {
+	object-fit: cover;
+	object-position: center;
+	width: 90%;
+	height: 50%;
+}
+
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #0e0e0e;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+.carousel__info {
+	position: relative;
+	width: 50%;
+}
+
+.carousel__center_informacion {
+	width: 65%;
+	text-align: justify;
+}
+ .carousel__center_informacion_derecha {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 0;
+	align-items: end;
+}
+
+
+@media (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal>* {
+		width: 100%;
+	}
+
+    .carousel{
+        flex-direction: column;
+    }
+    .carousel__contenedor{
+        width: 80%;
+    }
+    .carousel__lista{
+        height: 13rem;
+    }
+    .carousel__info{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel__center_informacion{
+        width: 80%;
+        text-align: center;
+    }
+    .carousel__center_informacion_derecha{
+        position: static;
+        align-items: center;
+    }
+    .carousel__elemento>img{
+        height: 25%;
+        margin-bottom: 5px;
+    }
+    .carousel__elemento >img{
+        height:50%;
+        width: 70%;
+        object-position: bottom;
+    }
+}
