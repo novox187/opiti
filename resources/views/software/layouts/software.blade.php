@@ -46,33 +46,27 @@
     </header>
     <div class="separador"></div>
     <main>
-        <div class="menu">
-            <div class="menu__contenedor">
-                <ul class="menu__opciones">
-                    <li class="hidden"><a href=""><i class="fa fa-calendar-check-o" aria-hidden="true"></i></a></li>
-                    <li><img class="menu__centro" src="{{ asset('img/layouts/logo3.png') }}" alt=""></li>
-                    <li class="hidden"><a href=""><i class="fa fa-calendar-check-o" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        {{--  <div class="semarador_menu"></div> --}}
         <div class="contenido">
             @yield('contenido')
         </div>
 
+        <div class=" menu ">
+            <ul class=" menu__opciones ">
+                {{-- IZQUIERDA --}}
+                <li class="opciones"><a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+                
+                </li>
+                {{-- IMAGEN CENTRAL --}}
+                <li><img class="menu__centro" src="{{ asset('img/layouts/logo3.png') }}" alt=""></li>
+                {{-- DERECHA --}}
+                <li class="opciones"><a href=""><i class="fa fa-calendar-check-o" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
     </main>
-{{--     <div class="color_palet">
-        <div class="container rojo"></div>
-        <div class="container naranja"></div>
-        <div class="container amarillo"></div>
-        <div class="container verde"></div>
-        <div class="container azul"></div>
-        <div class="container violeta"><img src="{{ asset('img/software/d.jpg') }}" alt=""></div>
-    </div> --}}
 
-    {{--     <footer>
+        <footer>
         <p>Todos los derechos reservados 2023-2024</p>
-    </footer> --}}
+    </footer>
     <script src="{{ asset('js/software/layouts/software.js') }}"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
