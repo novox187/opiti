@@ -22,42 +22,15 @@
     /* padding-right: 20px; */
 
 }
-
-.tabla::-webkit-scrollbar {
+.tabla::-webkit-scrollbar{
     width: 10px;
     background-color: #222;
     border-radius: 5px;
 }
-
-.tabla::-webkit-scrollbar-thumb {
+.tabla::-webkit-scrollbar-thumb{
     background-color: #f41;
     border-radius: 5px;
 }
-
-.search {
-    position: absolute;
-    right: 19%;
-    top: 12%;
-}
-
-.search input[type='text'] {
-    border-radius: 15px;
-    padding: 1em;
-    height: 2em;
-    border: none;
-    text-align: center;
-}
-
-.search button {
-    cursor: pointer;
-    background-color: #f41;
-    border-radius: 50%;
-    border: none;
-    color: #fff;
-    height: 3em;
-    width: 3em;
-}
-
 table {
     width: 100%;
     color: #999;
@@ -65,13 +38,11 @@ table {
     table-layout: fixed;
     border-collapse: collapse;
 }
-
-thead {
+thead{
     background-color: #222;
-
+    
 }
-
-th {
+th{
     padding: 20px 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -79,13 +50,11 @@ th {
     font-weight: bold;
     color: #c2c2c2;
 }
-
-td {
+td{
     padding: 15px;
     border-bottom: 1px solid #222;
 }
-
-td>button {
+td > button{
     width: 50%;
     height: 30px;
     border-radius: 10px;
@@ -94,17 +63,14 @@ td>button {
     border: none;
     cursor: pointer;
 }
-
-td>button:hover {
+td > button:hover{
     transform: scale(1.1);
 }
-
-tbody {
+tbody{
     background-color: #3f3e3e;
     text-align: justify;
 }
-
-tbody tr:hover {
-    background-color: #22222273;
-    cursor: pointer;
+tbody tr:hover{
+background-color: #22222273;
+cursor: pointer;
 }

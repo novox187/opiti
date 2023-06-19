@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\RusiaController;
 use Illuminate\Support\Facades\Route;
@@ -8,6 +9,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NosotrosController;
 use App\Http\Controllers\RegisterController;
+use App\Models\Client;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,4 +40,6 @@ Route::post('/login', [LoginController::class, 'store']);
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+Route::get('/admin/reuniones', [AdminController::class, 'index'])->name('admin');
+
+Route::get('/admin/clientes', [ClientController::class, 'index'])->name('clientes');

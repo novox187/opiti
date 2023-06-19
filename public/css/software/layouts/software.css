@@ -260,6 +260,7 @@ main {
 /* CONTENIDO */
 .contenido {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     height: 79vh;

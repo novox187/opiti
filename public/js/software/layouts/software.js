@@ -14,3 +14,13 @@ herramienta.addEventListener("click", function () {
     lis.forEach(li => li.classList.toggle("hidden"));
     
 })
+
+/* BUSCADOR DE REUNIONES */
+/* const search = document.querySelector('.buscador');
+const boton_search = document.querySelector('.boton_search');
+boton_search.addEventListener("click", function () {
+    search.classList.toggle("activo_search");
+    boton_search.dataset.type = 'submit';
+    
+    
+}) */

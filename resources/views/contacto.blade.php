@@ -19,12 +19,12 @@
                 <form action="/contacto" method="post" novalidate>
                     @csrf
                     {{-- <label for="name">Nombre</label> --}}
-                    <input name="name" type="text"  placeholder="Nombres">
+                    <input name="name" type="text"  placeholder="Ingrese sus dos nombres">
                     @error('name')
                         <p class="alert_error">{{ $message }}</p>
                     @enderror
                     {{-- <label for="lastname">Apellido</label> --}}
-                    <input type="text" name="lastname"  placeholder="Apellidos">
+                    <input type="text" name="lastname"  placeholder="Ingrese sus dos apellidos">
                     @error('lastname')
                         <p class="alert_error">{{ $message }}</p>
                     @enderror

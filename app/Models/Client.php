@@ -50,6 +50,6 @@ class Client extends Authenticatable
 
     public function reunion()
     {
-        return $this->hasOne(Reunion::class, 'client_id')->select(['date','estado']);
+        return $this->hasOne(Reunion::class, 'client_id');
     }
 }

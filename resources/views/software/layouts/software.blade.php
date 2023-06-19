@@ -53,13 +53,13 @@
         <div class=" menu ">
             <ul class=" menu__opciones ">
                 {{-- IZQUIERDA --}}
-                <li class="opciones"><a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+                <li class="opciones"><a href="{{ route('clientes') }}"><i class="fa fa-user" aria-hidden="true"></i></a>
                 
                 </li>
                 {{-- IMAGEN CENTRAL --}}
                 <li><img class="menu__centro" src="{{ asset('img/layouts/logo3.png') }}" alt=""></li>
                 {{-- DERECHA --}}
-                <li class="opciones"><a href=""><i class="fa fa-calendar-check-o" aria-hidden="true"></i></a></li>
+                <li class="opciones"><a href="{{ route('admin') }}"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </main>
