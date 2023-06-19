@@ -20,8 +20,8 @@
                     <tr>
                         <th>Nombre</th>
                         <th>Telefono</th>
-                        <th>email</th>
                         <th>Fecha de la reunion</th>
+                        <th>email</th>
                         <th>Estado</th>
                     </tr>
                 </thead>
@@ -31,12 +31,9 @@
                             
                             <td>{{ $client->client->name }}</td>
                             <td>{{ $client->client->phone }}</td>
-                            <td>{{ $client->client->email }}</td>
                             <td>{{ $client->date }}</td>
+                            <td>{{ $client->client->email }}</td>
                             <td><button>Pendiente</button></td>
-                            
-
-                            
                         </tr>
                 </tbody>
                 @endforeach

@@ -121,6 +121,14 @@ label{
     text-decoration: none;
 }
 
+.remember{
+    margin-top: 10px;
+    width: 80%;
+}
+.remember> input{
+    cursor: pointer;
+}
+
 /* 1000px */
 @media (max-width:1000px)
 {

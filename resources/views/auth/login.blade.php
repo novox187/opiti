@@ -22,6 +22,10 @@
         @error('password')
             <p class="error">{{ $message }}</p>
         @enderror
+        <div class="remember">
+            <input type="checkbox" name="remember" id="remember" > <label for="remember">Mantener mi sesion abierta</label>
+        </div>
+        
         <input type="submit" value="Ingresar">
     </form>
     <span class="RegisterLogin">Aun no tienes un usuario? <a href="{{ route('register') }}">Registrate</a></span>
