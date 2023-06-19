@@ -7,6 +7,7 @@ use App\Http\Controllers\RusiaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\NosotrosController;
 use App\Http\Controllers\RegisterController;
 use App\Models\Client;
@@ -36,6 +37,7 @@ Route::post('/contacto', [ContactoController::class, 'store']);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
+Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);

@@ -37,8 +37,16 @@
                 <p class="user__name">@yield('usuario')</p>
                 <div class="nav__desplegable ">
                     <ul>
-                        <li><a href="#">Perfil</a></li>
-                        <li><a href="#">Cerrar sesion</a></li>
+                        <form action="#">
+                            @csrf
+                            <li><button>Perfil</button></li>
+                        </form>
+                        
+                        <form action="{{ route('logout') }}" method='POST'>
+                            @csrf
+                            <li> <button type="submit">Cerrar sesion</button></li>
+                        </form>
+                        
                     </ul>
                 </div>
             </div>
