@@ -29,6 +29,6 @@ class RegisterController extends Controller
 
         auth()->attempt($request->only('user','password'));
 
-        return redirect()->route('admin');
+        return redirect()->route('admin.show');
     }
 }

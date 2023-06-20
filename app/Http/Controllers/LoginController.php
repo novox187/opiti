@@ -21,6 +21,6 @@ class LoginController extends Controller
         if (!auth()->attempt($request->only('user', 'password'), $request->remember)) {
             return back()->with('mensaje', 'credenciales incorrectas');
         }
-        return redirect()->route('admin');
+        return redirect()->route('admin.show');
     }
 }

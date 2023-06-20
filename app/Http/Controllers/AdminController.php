@@ -14,14 +14,9 @@ class AdminController extends Controller
     }
     public function index( Request $request)
     {
-/*         $busqueda = $request->buscador;
-        $clients = Reunion::with(['client' => function($q) use ($busqueda) {
-            $q->where('name', $busqueda);
-        }])->get(); */
-
         $busqueda = $request->buscador;
         if (!$busqueda) {
-            $clients = Reunion::with('client')->get();
+            $clients = Reunion::with('client')->oldest('estado')->orderByDesc('id')->get();
         }elseif($busqueda){
             $clients = Reunion::whereHas('client', function($q) use ($busqueda){
                 $q->where('name', 'LIKE','%'. $busqueda.'%')
@@ -36,6 +31,24 @@ class AdminController extends Controller
             'clients' => $clients,
         ]);
 
+    }
+
+    public function update( Request $request)
+    {
+        if ($request->activo) {
+            $id = $request->activo;
+            $reunion = Reunion::find($id);
+            $reunion->estado = false;
+            $reunion->save();
+        }elseif($request->estado){
+            $id = $request->estado;
+            $reunion = Reunion::find($id);
+            $reunion->estado = true;
+            $reunion->save();
+        }
+
+
+        return redirect(route('admin.show'));
     }
 
     

@@ -18,7 +18,7 @@
     <header class="nav">
         <div class="nav__contenedor">
             <div class="nav__logo">
-                <a href="{{ route('admin') }}"><img class="img_logo" src="{{ asset('img/layouts/logo3.png') }}"
+                <a href="{{ route('admin.show') }}"><img class="img_logo" src="{{ asset('img/layouts/logo3.png') }}"
                         alt="Logo" />
                 </a>
                 <div class="logo__descriotion">
@@ -67,7 +67,7 @@
                 {{-- IMAGEN CENTRAL --}}
                 <li><img class="menu__centro" src="{{ asset('img/layouts/logo3.png') }}" alt=""></li>
                 {{-- DERECHA --}}
-                <li class="opciones"><a href="{{ route('admin') }}"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></a></li>
+                <li class="opciones"><a href="{{ route('admin.show') }}"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </main>

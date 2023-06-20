@@ -33,7 +33,20 @@
                             <td>{{ $client->client->phone }}</td>
                             <td>{{ $client->date }}</td>
                             <td>{{ $client->client->email }}</td>
-                            <td><button>Pendiente</button></td>
+                            @if ($client->estado == false)
+                            <form action="{{ route('admin.update') }}" method="POST">
+                                @csrf
+                                @method('put')
+                                <td><button name="estado" type="submit" value="{{ $client->id }}">Pendiente</button></td>
+                            </form>
+                            
+                            @elseif ($client->estado == true)
+                            <form action="{{ route('admin.update') }}" method="POST">
+                                @csrf
+                                @method('put')
+                                <td><button name="activo" type="submit" value="{{ $client->id }}">completado</button></td>
+                            </form>
+                            @endif
                         </tr>
                 </tbody>
                 @endforeach

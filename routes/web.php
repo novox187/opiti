@@ -42,6 +42,8 @@ Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/admin/reuniones', [AdminController::class, 'index'])->name('admin');
+Route::get('/admin/reuniones', [AdminController::class, 'index'])->name('admin.show');
+Route::put('/admin/reuniones', [AdminController::class, 'update'])->name('admin.update');
+
 
 Route::get('/admin/clientes', [ClientController::class, 'index'])->name('clientes');

@@ -28,7 +28,7 @@
 <body>
 
     <header>
-        <div class="publicidad">
+{{--         <div class="publicidad">
             <div class="info" >
                 <p><i class="fa fa-phone" aria-hidden="true"></i>+79969434635</p>
                 <p><i class="fa fa-envelope" aria-hidden="true"></i>opiti@gmail.com</p>
@@ -39,7 +39,7 @@
                 <div class="login"><a href="">Registrate  </a></div>
                 <div class="register"><a href=""> Ingresa</a></div>
             </div>
-        </div>
+        </div> --}}
 
 
         <nav class="nav">
