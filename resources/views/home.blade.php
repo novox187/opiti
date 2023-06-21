@@ -10,7 +10,7 @@
         <div class="inicio">
             <div class="inicio__eslogan">
                 <div class="inicio__eslogan__center">
-                    <h1>Estudia en Rusia con la ayuda de Opiti.</h1>
+                    <h1>Estudia en corea con la ayuda de Opiti.</h1>
                     <p>Simplificamos el proceso de admisión y visado para que puedas cumplir tu sueño de estudiar en Rusia</p>
                 </div>
 
