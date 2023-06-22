@@ -5,6 +5,8 @@
     font-family: 'Quicksand', sans-serif;
 }
 body {
+    max-width: 100vw;
+    overflow-x: hidden;
     background-color: #f1f5f9;
 }
 /* NAVEGACION */
@@ -190,12 +192,12 @@ footer {
 .nav_mobile {
     position: fixed;
     background-color: #fff;
-    height: 70vh;
+    height: 100vh;
     padding: 2em;
     border-radius: 0px 10px 10px 0px;
     top: 13%;
-    left: -50%;
-    width: 25%;
+    left: -100%;
+    width: 100%;
     transition: 0.2s;
     --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -209,6 +211,7 @@ footer {
 
 .nav_mobile__contenedor > li{
     margin-bottom: 2em;
+    width: 100%;
     text-align: center;
     padding: 0.6rem;
     border-radius: 10px;
@@ -230,7 +233,7 @@ footer {
 .activo_mobile2 {
     border-radius: 15px;
     top: 18%;
-    left: 18px;
+    left: 0px;
 }
 
 /* CELULAR 640px */

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-<link rel="stylesheet" href="{{ asset('css/nosotros.css') }}">
+<link rel="stylesheet" href="{{ asset('css/nosotros.css?0.1') }}">
 
 @section('titulo')
     | Nosotros
@@ -20,9 +20,9 @@
             </p>
         </div>
         <div class="nosotros__contenedor">
-            <div class="nosotros__tarjeta">
+            <div class="nosotros__tarjeta"data-aos="fade-up" data-aos-duration="2000">
                 <div class="nosotros__imagen">
-                    <img class="nosotros__img" src="{{ asset('img/nosotros/harrison.jpg') }}" alt="Harrison">
+                    <img class="nosotros__img" src="{{ asset('img/nosotros/harrison.webp') }}" alt="Harrison">
                 </div>
                 <div class="nosotros__contenedor__descripcion">
                     <p class="nosotros__descripcion">
@@ -33,9 +33,9 @@
                 </div>
             </div>
 
-            <div class="nosotros__tarjeta">
+            <div class="nosotros__tarjeta" data-aos="fade-up" data-aos-duration="2000">
                 <div class="nosotros__imagen">
-                    <img class="nosotros__img" src="{{ asset('img/nosotros/mileni.jpg') }}" alt="Mileni">
+                    <img class="nosotros__img" src="{{ asset('img/nosotros/mileni.webp') }}" alt="Mileni">
                 </div>
                 <div class="nosotros__contenedor__descripcion">
                     <p class="nosotros__descripcion">

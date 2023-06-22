@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\reunion;
+use App\Models\Reunion;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Http\Request;
 

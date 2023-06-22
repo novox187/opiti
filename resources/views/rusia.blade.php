@@ -1,15 +1,17 @@
 @extends('layouts.app')
-<link rel="stylesheet" href="{{ asset('css/rusia.css') }}">
+
+<link rel="stylesheet" href="{{ asset('css/rusia.css?0.1') }}">
 
 @section('titulo')
     | Rusia
 @endsection
 
 @section('contenido')
-    <Section name='inicio'>
+
+    <Section name='rusia'>
         <div class="rusia">
             <div class="rusia__eslogan">
-                <div class="rusia__slogan__center">
+                <div class="rusia__slogan__center" data-aos="fade-right">
                     <h1 class="rusia__titulo">Conoce un poco de la belleza de Rusia.</h1>
                     <p class="rusia__descripcion">Rusia, el país más grande del mundo, ocupa una décima parte de toda la
                         tierra en la Tierra. Abarca 11
@@ -28,8 +30,8 @@
 
             </div>
 
-            <div class="rusia__img__contenedor">
-                <img class="rusia__img" src="img/rusia/inicio2.jpg" alt="imagen inicial">
+            <div class="rusia__img__contenedor" data-aos="fade-left">
+                <img class="rusia__img" src="img/rusia/inicio2.webp" alt="imagen inicial">
             </div>
         </div>
     </Section>
@@ -37,7 +39,7 @@
     <section>
         <div class="contenedor">
             <!-- RUSIA -->
-            <div class="carousel  izquierda">
+            <div class="carousel  izquierda"data-aos="fade-up">
 
                 <div class="carousel__contenedor rusia__contenedor">
 
@@ -47,39 +49,39 @@
 
                     <div class="carousel__lista rusia__lista">
                         <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia1.jpg" alt="Catedral de San Basilio en Moscú">
+                            <img src="img/rusia/rusia1.webp" alt="Catedral de San Basilio en Moscú">
                             <p>Catedral de San Basilio en Moscú</p>
                         </div>
                         <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia2.jpg" alt="Moscú city en Moscú">
+                            <img src="img/rusia/rusia2.webp" alt="Moscú city en Moscú">
                             <p>Moscú city en Moscú</p>
                         </div>
                         <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia3.jpg" alt="Madre Patria en Volgogrado">
+                            <img src="img/rusia/rusia3.webp" alt="Madre Patria en Volgogrado">
                             <p>Madre Patria en Volgogrado</p>
                         </div>
                         <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia4.jpg" alt="Museo del Hermitage en San Petersburgo">
+                            <img src="img/rusia/rusia4.webp" alt="Museo del Hermitage en San Petersburgo">
                             <p>Museo del Hermitage en San Petersburgo</p>
                         </div>
                         <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia5.jpg" alt="Centro Comercial Gum en Moscú">
+                            <img src="img/rusia/rusia5.webp" alt="Centro Comercial Gum en Moscú">
                             <p>Centro Comercial Gum en Moscú</p>
                         </div>
                         <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia7.jpg" alt="Puente del palacio en San Petersburgo">
+                            <img src="img/rusia/rusia7.webp" alt="Puente del palacio en San Petersburgo">
                             <p>Puente del palacio en San Petersburgo</p>
                         </div>
                         <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia8.jpg" alt="Parque 300 años en San Petersburgo">
+                            <img src="img/rusia/rusia8.webp" alt="Parque 300 años en San Petersburgo">
                             <p>Parque 300 años en San Petersburgo</p>
                         </div>
                         <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia9.jpg" alt="Mezquita Kul Sharif en Kazan">
+                            <img src="img/rusia/rusia9.webp" alt="Mezquita Kul Sharif en Kazan">
                             <p>Mezquita Kul Sharif en Kazan </p>
                         </div>
                         <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia10.jpg" alt="Parque nacional Ládoga Skerries en Karelia">
+                            <img src="img/rusia/rusia10.webp" alt="Parque nacional Ládoga Skerries en Karelia">
                             <p>Parque nacional Ládoga Skerries en Karelia</p>
                         </div>
                     </div>
@@ -104,7 +106,7 @@
 
             <!-- GASTRONOMIA -->
             <!-- DERECHA -->
-            <div class="carousel gastronomia derecha">
+            <div class="carousel gastronomia derecha" data-aos="fade-up">
                 <div class="carousel__contenedor gastronomia__contenedor">
                     <button aria-label="Anterior" class="carousel__anterior gastronomia__anterior">
                         <i class="fas fa-chevron-left"></i>
@@ -112,41 +114,41 @@
 
                     <div class="carousel__lista gastronomia__lista">
                         <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia1.jpg" alt="Пельмени / Pelmeni">
+                            <img src="img/rusia/gastronomia/gastronomia1.webp" alt="Пельмени / Pelmeni">
                             <p>Пельмени / Pelmeni</p>
                         </div>
                         <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia2.jpg" alt="Гречка / Alforfón">
+                            <img src="img/rusia/gastronomia/gastronomia2.webp" alt="Гречка / Alforfón">
                             <p>Гречка / Alforfón</p>
                         </div>
                         <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia3.jpg" alt="Оливье / Ensalada rusa">
+                            <img src="img/rusia/gastronomia/gastronomia3.webp" alt="Оливье / Ensalada rusa">
                             <p>Оливье / Ensalada rusa</p>
                         </div>
                         <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia4.jpg" alt="Квас / Kvas">
+                            <img src="img/rusia/gastronomia/gastronomia4.webp" alt="Квас / Kvas">
                             <p>Квас / Kvas</p>
                         </div>
 
                         <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia5.jpg" alt="Желе c мясом / Gelatina con carne">
+                            <img src="img/rusia/gastronomia/gastronomia5.webp" alt="Желе c мясом / Gelatina con carne">
                             <p>Желе c мясом / Gelatina con carne</p>
                         </div>
 
                         <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia6.jpg" alt="Борщ / Borch">
+                            <img src="img/rusia/gastronomia/gastronomia6.webp" alt="Борщ / Borch">
                             <p>Борщ / Borch</p>
                         </div>
                         <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia7.jpg" alt="Сырники / Syrniki">
+                            <img src="img/rusia/gastronomia/gastronomia7.webp" alt="Сырники / Syrniki">
                             <p>Сырники / Syrniki</p>
                         </div>
                         <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia8.jpg" alt="Солянка / Solyanka">
+                            <img src="img/rusia/gastronomia/gastronomia8.webp" alt="Солянка / Solyanka">
                             <p>Солянка / Solyanka</p>
                         </div>
                         <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia9.jpg" alt="Вяленая рыба / Pescado seco">
+                            <img src="img/rusia/gastronomia/gastronomia9.webp" alt="Вяленая рыба / Pescado seco">
                             <p>Вяленая рыба / Pescado seco</p>
                         </div>
                     </div>
@@ -175,7 +177,7 @@
 
         <!-- CLIMA -->
         <!-- DERECHA -->
-        <div class="carousel clima ">
+        <div class="carousel clima " data-aos="fade-up">
             <div class="carousel__contenedor clima__contenedor">
                 <button aria-label="Anterior" class="carousel__anterior clima__anterior">
                     <i class="fas fa-chevron-left"></i>
@@ -183,19 +185,19 @@
 
                 <div class="carousel__lista clima__lista">
                     <div class="carousel__elemento clima__elemento">
-                        <img src="img/rusia/clima/clima1.jpg" alt="Зима / Invierno">
+                        <img src="img/rusia/clima/clima1.webp" alt="Зима / Invierno">
                         <p>Зима / Invierno</p>
                     </div>
                     <div class="carousel__elemento clima__elemento">
-                        <img src="img/rusia/clima/clima2.jpg" alt="Весна / Primavera">
+                        <img src="img/rusia/clima/clima2.webp" alt="Весна / Primavera">
                         <p>Весна / Primavera</p>
                     </div>
                     <div class="carousel__elemento clima__elemento">
-                        <img src="img/rusia/clima/clima4.jpg" alt="Лето / Verano">
+                        <img src="img/rusia/clima/clima4.webp" alt="Лето / Verano">
                         <p>Лето / Verano</p>
                     </div>
                     <div class="carousel__elemento clima__elemento">
-                        <img src="img/rusia/clima/clima3.jpg" alt="Осень / Otoño">
+                        <img src="img/rusia/clima/clima3.webp" alt="Осень / Otoño">
                         <p>Осень / Otoño</p>
                     </div>    
                 </div>
@@ -221,7 +223,7 @@
 
         <!-- TRANSPORTE -->
         <!-- IZQUIERDA -->
-        <div class="carousel transporte derecha">
+        <div class="carousel transporte derecha" data-aos="fade-up">
 
             <div class="carousel__contenedor transporte__contenedor">
 
@@ -231,23 +233,23 @@
 
                 <div class="carousel__lista transporte__lista">
                     <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte1.jpg" alt="Автобус / Bus">
+                        <img src="img/rusia/transporte/transporte1.webp" alt="Автобус / Bus">
                         <p>Автобус / Bus</p>
                     </div>
                     <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte2.jpg" alt="Самокат / Scooter">
+                        <img src="img/rusia/transporte/transporte2.webp" alt="Самокат / Scooter">
                         <p>Самокат / Scooter</p>
                     </div>
                     <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte3.jpg" alt="Такси / Taxi">
+                        <img src="img/rusia/transporte/transporte3.webp" alt="Такси / Taxi">
                         <p>Такси / Taxi</p>
                     </div>
                     <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte4.jpg" alt="Поезд / Tren">
+                        <img src="img/rusia/transporte/transporte4.webp" alt="Поезд / Tren">
                         <p>Поезд / Tren</p>
                     </div>
                     <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte5.jpg" alt="Поезд / Tren">
+                        <img src="img/rusia/transporte/transporte5.webp" alt="Поезд / Tren">
                         <p>Поезд / Tren</p>
                     </div>
                 </div>

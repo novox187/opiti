@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{-- LIBRERIA AOS --}}
+    <link rel="stylesheet" href="{{ asset('css/librerias/AOS.css?0.1') }}">
     {{-- Quicksand --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     {{-- CSS APP --}}
-    <link rel="stylesheet" href="{{ asset('css/layouts/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/layouts/app.css?0.1') }}">
     {{-- ICON --}}
     <link rel="shortcut icon" href="{{ asset('img/layouts/logo3.png') }}" type="image/x-icon">
     <title>OPITI @yield('titulo')</title>
@@ -28,22 +30,7 @@
 <body>
 
     <header>
-{{--         <div class="publicidad">
-            <div class="info" >
-                <p><i class="fa fa-phone" aria-hidden="true"></i>+79969434635</p>
-                <p><i class="fa fa-envelope" aria-hidden="true"></i>opiti@gmail.com</p>
-                <p><i class="fa fa-map-marker" aria-hidden="true"></i>Rusia kurks</p>
-            </div>
-
-            <div class="auth">
-                <div class="login"><a href="">Registrate  </a></div>
-                <div class="register"><a href=""> Ingresa</a></div>
-            </div>
-        </div> --}}
-
-
         <nav class="nav">
-
             <div class="logo">
                 <a href="/"><img class="img_logo" src="{{ asset('img/layouts/logo3.png') }}" alt="Logo" />
                     {{-- <span>OPITI</span>  --}}
@@ -82,9 +69,12 @@
         </nav>
         <nav class="nav_mobile">
             <ul class="nav_mobile__contenedor">
-                <li><a href="/rusia">Rusia</a> </li>
-                <li><a href="/nosotros">Nosotros</a> </li>
-                <li><a href="/contacto">Contacto <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> </li>
+                <li><a href="{{ route('inicio') }}">Home </a> </li>
+                <li><a href="{{ route('rusia') }}">Rusia</a> </li>
+                <li><a href="{{ route('nosotros') }}">Nosotros</a> </li>
+                <li><a href="{{ route('contacto') }}">Contacto <i class="fa fa-long-arrow-right"
+                            aria-hidden="true"></i></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -103,7 +93,7 @@
                     <i class="material-icons icon-font-color">close</i>
                 </button>
 
-                <p> <img src="img/secretary.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+                <p> <img src="img/secretary.webp" width="50"> Hola, ¿en que podemos ayudarle? </p>
 
             </div>
             <div class="content-whatsapp -bottom">
@@ -129,10 +119,16 @@
     <footer>
         <p>Todos los derechos reservados 2023-2024</p>
     </footer>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js?0.4') }}"></script>
     <script src="{{ asset('js/rusia.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    {{-- LIBRERIA AOS --}}
+    <script src="{{ asset('js/librerias/AOS/AOS.js?0.1') }}"></script>
+    <script>
+        AOS.init();
+    </script>
+    </main>
 </body>
 
 </html>

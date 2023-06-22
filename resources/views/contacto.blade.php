@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-<link rel="stylesheet" href="{{ asset('css/contacto.css') }}">
+<link rel="stylesheet" href="{{ asset('css/contacto.css?0.1') }}">
 
 @section('titulo')
     | contacto
@@ -9,11 +9,11 @@
 @section('contenido')
     <div class="contacto">
         <div class="contacto__titulo">
-            <h1>Cordina con nosotros Opiti te atendera al instante</h1>
+            <h1>Coordina con nosotros</h1>
         </div>
-        <div class="contacto__contenedor">
+        <div class="contacto__contenedor" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="contacto__social">
-                <img class="contacto__img" src=" {{ asset('img/contacto/contacto.jpg') }} " alt="">
+                <img class="contacto__img" src=" {{ asset('img/contacto/contacto.webp') }} " alt="">
             </div>
             <div class="contacto__formulario">
                 <form action="/contacto" method="post" novalidate>

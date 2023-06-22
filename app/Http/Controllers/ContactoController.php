@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
-use App\Models\reunion;
+use App\Models\Reunion;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
