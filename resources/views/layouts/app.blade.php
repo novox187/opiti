@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     {{-- CSS APP --}}
-    <link rel="stylesheet" href="{{ asset('css/layouts/app.css?0.1') }}">
+    <link rel="stylesheet" href="{{ asset('css/layouts/app.css?0.5') }}">
     {{-- ICON --}}
     <link rel="shortcut icon" href="{{ asset('img/layouts/logo3.png') }}" type="image/x-icon">
     <title>OPITI @yield('titulo')</title>
