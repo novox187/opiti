@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     {{-- LIBRERIA AOS --}}
     <link rel="stylesheet" href="{{ asset('css/librerias/AOS.css?0.1') }}">
     {{-- Quicksand --}}
@@ -25,6 +26,14 @@
     {{-- ICON --}}
     <link rel="shortcut icon" href="{{ asset('img/layouts/logo3.png') }}" type="image/x-icon">
     <title>OPITI @yield('titulo')</title>
+    <meta name="application-name" content=" Esrudia en Rusia con la ayuda de Opiti">
+    <meta name="Author" lang="es" content="Harrison Ochoa">
+    <meta name="keywords" content="Rusia, Estudios en el extranjero, extranjero, Universidades en Rusia" >
+    <meta name="description" content="Estudia en rusia de una forma muy sencilla, te ayudamos durante todo el proceso">
+    <meta name="robots" content="index, all, follow"> 
+    <meta name="audience" content="all">
+    <meta name="category" content="studies">
+    <meta itemprop="telephone" content="+7(996) 943 46-35">
 </head>
 
 <body>

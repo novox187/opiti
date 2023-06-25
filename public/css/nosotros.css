@@ -12,6 +12,7 @@
 .nosotros__resumen {
     width: 50%;
     text-align: center;
+    padding: 10px;
 }
 
 .nosotros__contenedor {
@@ -72,6 +73,10 @@
         width: 90%;
         margin-bottom: 2%;
     }
+    .nosotros__resumen > p {
+        text-align: justify;
+    }
+    
     .nosotros__tarjeta{
         width: 100%;
     }
