@@ -48,7 +48,7 @@
                 <div class="logo__descriotion">
                     <div>
                         <p class="logo__nombre">OPITI</p>
-                        <p class="logo__slogan">Experiencias de por vida</p>
+                        <p class="logo__slogan">Experiencias de por vida de perro</p>
                     </div>
                 </div>
 
