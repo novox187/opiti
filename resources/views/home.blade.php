@@ -2,7 +2,9 @@
 
 <link rel="stylesheet" href="{{ asset('css/home.css?0.3') }}">
 
-
+@section('canonical')
+<link rel="canonical" href="https://opiti.test/">
+@endsection
 @section('contenido')
 <main>
 

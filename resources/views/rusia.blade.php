@@ -2,6 +2,10 @@
 
 <link rel="stylesheet" href="{{ asset('css/rusia.css?0.1') }}">
 
+@section('canonical')
+<link rel="canonical" href="https://opiti.test/rusia">
+@endsection
+
 @section('titulo')
     | Rusia
 @endsection

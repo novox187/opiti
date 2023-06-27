@@ -34,6 +34,7 @@
     <meta name="audience" content="all">
     <meta name="category" content="studies">
     <meta itemprop="telephone" content="+7(996) 943 46-35">
+    @yield('canonical')
 </head>
 
 <body>

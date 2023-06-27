@@ -2,6 +2,10 @@
 
 <link rel="stylesheet" href="{{ asset('css/contacto.css?0.1') }}">
 
+@section('canonical')
+<link rel="canonical" href="https://opiti.test/contacto">
+@endsection
+
 @section('titulo')
     | contacto
 @endsection
