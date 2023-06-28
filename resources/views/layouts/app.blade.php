@@ -48,7 +48,7 @@
                 </a>
                 <div class="logo__descriotion">
                     <div>
-                        <p class="logo__nombre">OPITI</p>
+                        <p class="logo__nombre">OPITula</p>
                         <p class="logo__slogan">Experiencias de por vida</p>
                     </div>
                 </div>
