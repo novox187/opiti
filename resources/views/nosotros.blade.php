@@ -1,9 +1,12 @@
 @extends('layouts.app')
 
-<link rel="stylesheet" href="{{ asset('css/nosotros.css?0.1') }}">
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/nosotros.css?0.1') }}">
+@endpush
+
 
 @section('canonical')
-<link rel="canonical" href="https://opiti.test/nosotros">
+    <link rel="canonical" href="https://opiti.test/nosotros">
 @endsection
 
 @section('titulo')
@@ -29,10 +32,9 @@
                     <img class="nosotros__img" src="{{ asset('img/nosotros/harrison.webp') }}" alt="Harrison">
                 </div>
                 <div class="nosotros__contenedor__descripcion">
+                    <h3 class="nosotros__nombre">Ases. Harrison Ochoa</h3>
                     <p class="nosotros__descripcion">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta earum ipsum, non, iusto reiciendis
-                        quas eaque fuga magnam expedita obcaecati tempora harum tenetur ut minima velit, atque neque
-                        quisquam maiores?
+                        Mienbro y cofundador de Opiti.
                     </p>
                 </div>
             </div>
@@ -42,10 +44,9 @@
                     <img class="nosotros__img" src="{{ asset('img/nosotros/mileni.webp') }}" alt="Mileni">
                 </div>
                 <div class="nosotros__contenedor__descripcion">
+                    <h3 class="nosotros__nombre">Lcda. Mileny Abarca </h3>
                     <p class="nosotros__descripcion">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nulla excepturi animi saepe odit
-                        cupiditate laboriosam quam expedita maiores. Iure enim explicabo iusto ducimus placeat tempore
-                        pariatur eaque cum quae.
+                        Mienbro y cofundadora de Opiti.
                     </p>
                 </div>
             </div>

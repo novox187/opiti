@@ -1,9 +1,12 @@
 @extends('layouts.app')
 
-<link rel="stylesheet" href="{{ asset('css/rusia.css?0.1') }}">
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/rusia.css?0.1') }}">
+@endpush
+
 
 @section('canonical')
-<link rel="canonical" href="https://opiti.test/rusia">
+    <link rel="canonical" href="https://opiti.test/rusia">
 @endsection
 
 @section('titulo')
@@ -11,7 +14,6 @@
 @endsection
 
 @section('contenido')
-
     <Section name='rusia'>
         <div class="rusia">
             <div class="rusia__eslogan">
@@ -101,7 +103,10 @@
                 <div class=" carousel__info ">
                     <div class="carousel__center_informacion ">
                         <h1>Lugares destacados de Rusia</h1>
-                        <p>Rusia se destaca por ser el país más extenso del mundo y se ubica entre el continente europeo y asiático. El idioma oficial es el ruso y se maneja el rublo como moneda. Su capital es Moscú y cuenta con una gran diversidad de nacionalidades que migran al país anualmente por lo que el idioma inglés es bastante común entre sus habitantes.
+                        <p>Rusia se destaca por ser el país más extenso del mundo y se ubica entre el continente europeo y
+                            asiático. El idioma oficial es el ruso y se maneja el rublo como moneda. Su capital es Moscú y
+                            cuenta con una gran diversidad de nacionalidades que migran al país anualmente por lo que el
+                            idioma inglés es bastante común entre sus habitantes.
                         </p>
                     </div>
                 </div>
@@ -203,7 +208,7 @@
                     <div class="carousel__elemento clima__elemento">
                         <img src="img/rusia/clima/clima3.webp" alt="Осень / Otoño">
                         <p>Осень / Otoño</p>
-                    </div>    
+                    </div>
                 </div>
 
                 <button aria-label="Siguiente" class="carousel__siguiente clima__siguiente">
@@ -269,7 +274,9 @@
             <div class=" carousel__info carousel__info_derecha">
                 <div class="carousel__center_informacion carousel__center_informacion_derecha">
                     <h1>Transporte</h1>
-                    <p>El transporte en Rusia es confortable y moderno, pero sobretodo cuenta con la facilidad de realizar el pago online o personalmente con tarjeta y cuenta con aplicaciones para posibilitar el traslado de la persona, claro que pagar en efectivo sigue siendo una opción descartable.</p>
+                    <p>El transporte en Rusia es confortable y moderno, pero sobretodo cuenta con la facilidad de realizar
+                        el pago online o personalmente con tarjeta y cuenta con aplicaciones para posibilitar el traslado de
+                        la persona, claro que pagar en efectivo sigue siendo una opción descartable.</p>
                 </div>
             </div>
 
