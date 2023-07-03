@@ -24,8 +24,8 @@
     {{-- CSS APP --}}
     <link rel="stylesheet" href="{{ asset('css/layouts/app.css?0.5') }}">
     {{-- ICON --}}
-    <link rel="shortcut icon" href="{{ asset('img/layouts/logo3.png') }}" type="image/x-icon">
-    <title>OPITI @yield('titulo')</title>
+    <link rel="shortcut icon" href="{{ asset('img/favicon_io/favicon.ico') }}" type="image/x-icon">
+    <title>Opiti @yield('titulo')</title>
     <meta name="application-name" content=" Esrudia en Rusia con la ayuda de Opiti">
     <meta name="Author" lang="es" content="Harrison Ochoa">
     <meta name="keywords" content="Rusia, Estudios en el extranjero, extranjero, Universidades en Rusia" >

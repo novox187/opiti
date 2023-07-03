@@ -50,10 +50,20 @@
 
 .nosotros__contenedor__descripcion {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding: 0% 2% 0% 5%; 
+    padding: 2% 2%; 
+}
+.nosotros__nombre{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.nosotros__descripcion{
+opacity: 0.8;
 }
 
 
@@ -79,8 +89,15 @@
     
     .nosotros__tarjeta{
         width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .nosotros__contenedor__descripcion{
         width: 90%;
+    }
+    .nosotros__imagen {
+        width: 90%;
+        border-radius: 5px;
     }
 }

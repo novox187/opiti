@@ -140,7 +140,7 @@
         grid-template-columns: auto auto auto auto;
         gap: 30px;
         width: 100%;
-        height: 70vh;
+        min-height: 80vh;
         padding: 50px;
         background-color: #13161c;
         position: relative;
@@ -154,6 +154,7 @@
             background-color: #fff;
             color: #13161c;
             border-radius: 10px;
+            padding: 10px;
             transition: all 0.5s;
 
             & .imagen__beneficio {
@@ -177,12 +178,17 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 0px 30px;
+                padding: 0px 10px;
                 text-align: start;
 
                 & .beneficio__titulo {
-                    color: #f41;
+                    margin-bottom: 10px;
+                    color: #333333;
                 }
+                & .beneficio__decripcion{
+                    opacity: 0.8;
+                }
+                
             }
 
         }
@@ -197,6 +203,34 @@
         background-color: #13161c;
         bottom: -19.95vh;
         clip-path: polygon(50% 40%, 0 0, 100% 0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .beneficios .contenedor__beneficios{
+        grid-template-columns: auto auto;
+
+        & .card__beneficio {
+            & .imagen__beneficio{
+                & .img__beneficio{
+                    object-position: top;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .beneficios .contenedor__beneficios{
+        grid-template-columns: auto ;
+        padding: 20px;
+
+        & .card__beneficio {
+            & .imagen__beneficio{
+                & .img__beneficio{
+                    object-position: center;
+                }
+            }
+        }
     }
 }
 
@@ -230,7 +264,7 @@
 
 
 /* -------------------------- */
-/*           Requisitos       */
+/*           Contacto         */
 /* -------------------------- */
 .contacto {
     position: relative;
@@ -241,7 +275,7 @@
 
     & .contenedor__contacto {
         width: 100%;
-        height: 50vh;
+        height: 40vh;
 
         & video {
             object-fit: cover;
@@ -261,15 +295,18 @@
             width: 100%;
             height: 100%;
             color: #fff;
+            min-width: 350px;
 
             & .titulo__contacto{
                 font-weight: bold;
                 margin-bottom: 0.5em;
+                text-align: center;
             }
 
             & .texto__contacto{
                 opacity: 0.8;
                 margin-bottom: 1.5em;
+                
             }
 
             & .boton__contacto{
