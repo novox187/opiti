@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
-<link rel="stylesheet" href="{{ asset('css/home.css?0.3') }}">
+@push('style')
+    <link rel="stylesheet" href="{{ asset('css/home.css?0.3') }}">
+@endpush
+
 
 @section('canonical')
     <link rel="canonical" href="https://opiti.test/">
@@ -132,7 +135,7 @@
         </section>
 
         {{-- -------------------- --}}
-        {{--       contacto       --}}
+        {{--       Contacto       --}}
         {{-- -------------------- --}}
 
         <section class="contacto">

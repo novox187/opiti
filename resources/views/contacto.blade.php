@@ -1,9 +1,12 @@
 @extends('layouts.app')
 
-<link rel="stylesheet" href="{{ asset('css/contacto.css?0.1') }}">
+@push('style')
+    <link rel="stylesheet" href="{{ asset('css/contacto.css?0.1') }}">
+@endpush
+
 
 @section('canonical')
-<link rel="canonical" href="https://opiti.test/contacto">
+    <link rel="canonical" href="https://opiti.test/contacto">
 @endsection
 
 @section('titulo')
@@ -23,27 +26,27 @@
                 <form action="/contacto" method="post" novalidate>
                     @csrf
                     {{-- <label for="name">Nombre</label> --}}
-                    <input name="name" type="text"  placeholder="Ingrese sus dos nombres">
+                    <input name="name" type="text" placeholder="Ingrese sus dos nombres">
                     @error('name')
                         <p class="alert_error">{{ $message }}</p>
                     @enderror
                     {{-- <label for="lastname">Apellido</label> --}}
-                    <input type="text" name="lastname"  placeholder="Ingrese sus dos apellidos">
+                    <input type="text" name="lastname" placeholder="Ingrese sus dos apellidos">
                     @error('lastname')
                         <p class="alert_error">{{ $message }}</p>
                     @enderror
                     {{-- <label for="email">Email</label> --}}
-                    <input type="email" name="email"  placeholder="correo electronico">
+                    <input type="email" name="email" placeholder="correo electronico">
                     @error('email')
                         <p class="alert_error">{{ $message }}</p>
                     @enderror
                     {{-- <label for="asunto">Asunto</label> --}}
-                    <input type="text" name="phone"  placeholder="Numero de telefono">
+                    <input type="text" name="phone" placeholder="Numero de telefono">
                     @error('phone')
                         <p class="alert_error">{{ $message }}</p>
                     @enderror
                     <label for="date">Agenda una reunion</label>
-                    <input type="date" name="date"  min="{{$now}}">
+                    <input type="date" name="date" min="{{ $now }}">
                     {{-- <span class="alert"><b>Importante: </b>todas las reuniones seran apartir de las 8 de la mañana debido al cambio horerio</span> --}}
                     @error('date')
                         <p class="alert_error">{{ $message }}</p>

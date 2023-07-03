@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     {{-- CSS APP --}}
+    @stack('style')
     <link rel="stylesheet" href="{{ asset('css/layouts/app.css?0.5') }}">
     {{-- ICON --}}
     <link rel="shortcut icon" href="{{ asset('img/favicon_io/favicon.ico') }}" type="image/x-icon">

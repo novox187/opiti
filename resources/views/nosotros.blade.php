@@ -1,9 +1,12 @@
 @extends('layouts.app')
 
-<link rel="stylesheet" href="{{ asset('css/nosotros.css?0.1') }}">
+@push('style')
+    <link rel="stylesheet" href="{{ asset('css/nosotros.css?0.1') }}">
+@endpush
+
 
 @section('canonical')
-<link rel="canonical" href="https://opiti.test/nosotros">
+    <link rel="canonical" href="https://opiti.test/nosotros">
 @endsection
 
 @section('titulo')
