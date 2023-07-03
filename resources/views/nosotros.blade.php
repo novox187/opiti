@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@push('style')
+@push('styles')
     <link rel="stylesheet" href="{{ asset('css/nosotros.css?0.1') }}">
 @endpush
 

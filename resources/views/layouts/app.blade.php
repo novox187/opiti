@@ -22,19 +22,42 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     {{-- CSS APP --}}
-    @stack('style')
+    @stack('styles')
     <link rel="stylesheet" href="{{ asset('css/layouts/app.css?0.5') }}">
     {{-- ICON --}}
     <link rel="shortcut icon" href="{{ asset('img/favicon_io/favicon.ico') }}" type="image/x-icon">
     <title>Opiti @yield('titulo')</title>
     <meta name="application-name" content=" Esrudia en Rusia con la ayuda de Opiti">
-    <meta name="Author" lang="es" content="Harrison Ochoa">
-    <meta name="keywords" content="Rusia, Estudios en el extranjero, extranjero, Universidades en Rusia" >
-    <meta name="description" content="Estudia en rusia de una forma muy sencilla, te ayudamos durante todo el proceso">
-    <meta name="robots" content="index, all, follow"> 
     <meta name="audience" content="all">
     <meta name="category" content="studies">
     <meta itemprop="telephone" content="+7(996) 943 46-35">
+    <meta name="title" content="Opiti Estudia en Ruisa de la mano de los mejores">
+    <meta name="description"
+        content="Simplificamos el proceso de admisión y visado para que puedas cumplir tu sueño de estudiar en Rusia">
+    <meta name="keywords" content="Estudios en rusia, Universidades en rusia, estudiar en rusia">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Spanish">
+    <meta name="revisit-after" content="2 days">
+    <meta name="author" content="Harrison Ochoa">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://opiti.online/" />
+    <meta property="og:title" content="Opiti Estudia en Ruisa de la mano de los mejores
+" />
+    <meta property="og:description"
+        content="Simplificamos el proceso de admisión y visado para que puedas cumplir tu sueño de estudiar en Rusia" />
+    <meta property="og:image" content="https://opiti.online/img/home/rusia.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://opiti.online/" />
+    <meta property="twitter:title" content="Opiti Estudia en Ruisa de la mano de los mejores
+" />
+    <meta property="twitter:description"
+        content="Simplificamos el proceso de admisión y visado para que puedas cumplir tu sueño de estudiar en Rusia" />
+    <meta property="twitter:image" content="https://opiti.online/img/home/rusia.webp" />
+
     @yield('canonical')
 </head>
 
@@ -129,6 +152,7 @@
 
     <footer>
         <p>Todos los derechos reservados 2023-2024</p>
+        <p>opiti.online</p>
     </footer>
     <script src="{{ asset('js/app.js?0.4') }}"></script>
     <script src="{{ asset('js/rusia.js') }}"></script>
@@ -139,6 +163,7 @@
     <script>
         AOS.init();
     </script>
+    @stack('scripts')
     </main>
 </body>
 

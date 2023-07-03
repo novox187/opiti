@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@push('style')
+@push('styles')
     <link rel="stylesheet" href="{{ asset('css/home.css?0.3') }}">
 @endpush
 
@@ -45,7 +45,7 @@
         <section class="beneficios" name='beneficios'>
             <div class="contenedor__beneficios">
                 {{-- Asesoría personalizada. --}}
-                <div class="card__beneficio" data-aos="fade-right" data-aos-delay="300">
+                <div class="card__beneficio" data-aos="fade-right" >
                     <div class="imagen__beneficio">
                         <img class="img__beneficio" src="img/home/acesoria.webp" alt="imagen inicial">
                     </div>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 {{-- Gestión del proceso de admisión. --}}
-                <div class="card__beneficio" data-aos="fade-right" data-aos-delay="400">
+                <div class="card__beneficio" data-aos="fade-right" data-aos-delay="300">
                     <div class="imagen__beneficio">
                         <img class="img__beneficio" src="img/home/admision.webp" alt="imagen inicial">
                     </div>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 {{-- Tramitación del visado. --}}
-                <div class="card__beneficio" data-aos="fade-left" data-aos-delay="400">
+                <div class="card__beneficio" data-aos="fade-left"  data-aos-delay="300">
                     <div class="imagen__beneficio">
                         <img class="img__beneficio" src="img/home/visado.webp" alt="imagen inicial">
                     </div>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 {{-- Curso de ruso con profesores rusos. --}}
-                <div class="card__beneficio" data-aos="fade-left" data-aos-delay="300">
+                <div class="card__beneficio" data-aos="fade-left" >
                     <div class="imagen__beneficio">
                         <img class="img__beneficio" src="img/home/profesores.webp" alt="imagen inicial">
                     </div>
@@ -150,10 +150,12 @@
                 </div>
             </div>
         </section>
-        {{-- Libreria PARTICLES --}}
-        <script src="{{ asset('js/librerias/particles/particles.min.js') }}"></script>
-        <script src="{{ asset('js/librerias/particles/particulas.js') }}"></script>
-        {{-- LIBRERIA TYPED --}}
-        <script src="{{ asset('js/librerias/typed/typed.js') }}"></script>
-        <script src="{{ asset('js/librerias/typed/typed_main.js?0.2') }}"></script>
+        @push('scripts')
+            {{-- Libreria PARTICLES --}}
+            <script src="{{ asset('js/librerias/particles/particles.min.js') }}"></script>
+            <script src="{{ asset('js/librerias/particles/particulas.js') }}"></script>
+            {{-- LIBRERIA TYPED --}}
+            <script src="{{ asset('js/librerias/typed/typed.js') }}"></script>
+            <script src="{{ asset('js/librerias/typed/typed_main.js?0.2') }}"></script>
+        @endpush
     @endsection
