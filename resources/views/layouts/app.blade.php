@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/71a34700d9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6092d0a250.js" crossorigin="anonymous"></script>
     {{-- CSS CHAT --}}
     <link rel="stylesheet" href="{{ asset('css/layouts/whats.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layouts/whats2.css') }}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> --}}
     <!-- JsSCLAIDER -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
@@ -64,6 +64,17 @@
 <body>
 
     <header>
+        <nav class="info">
+            <ul class="contenedor__info">
+                <li class="inf__info"><i class="fa-solid fa-phone "></i> <a
+                        href="https://wa.me/+79969434635" target="_blank" rel="noopener noreferrer"> +7 (996)
+                        943-46-35</a>
+                <li class="inf__info"><i class="fa-solid fa-envelope "></i> <a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRrfkXNXCDgxMGhkZJPCRJWvlHSNQTQXMGtKbVFqsnQCsRrLPrdGpbxkXZxsvHTNzMLSGf "
+                        target="_blank" rel="noopener noreferrer"> opiti.ru@gmail.com </a></li>
+                <li class="inf__info"><i class="fa-solid fa-clock "></i> 08:00-16:00</li>
+            </ul>
+        </nav>
         <nav class="nav">
             <div class="logo">
                 <a href="/"><img class="img_logo" src="{{ asset('img/layouts/logo3.png') }}" alt="Logo" />
@@ -96,10 +107,9 @@
                 </div>
 
                 <div class="menu">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-
         </nav>
         <nav class="nav_mobile">
             <ul class="nav_mobile__contenedor">
@@ -151,8 +161,26 @@
     </div>
 
     <footer>
-        <p>Todos los derechos reservados 2023-2024</p>
-        <p>opiti.online</p>
+        <div class="informacion">
+            <ul class="contenedor__informacion">
+                <h3>Contacto</h3>
+                <li class="inf__informacion"> <a href="https://wa.me/+79969434635"
+                        target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-phone "></i> +7 (996) 943-46-35</a>
+                <li class="inf__informacion"><a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRrfkXNXCDgxMGhkZJPCRJWvlHSNQTQXMGtKbVFqsnQCsRrLPrdGpbxkXZxsvHTNzMLSGf "
+                        target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope "></i>  opiti.ru@gmail.com </a></li>
+                <li class="inf__informacion"><i class="fa-solid fa-clock "></i> 08:00-16:00</li>
+            </ul>
+
+            <ul class="contenedor__informacion">
+                <h3>Paginas de interes</h3>
+                <li class="inf__informacion"><a href="{{ route('inicio') }}"><i class="fa-solid fa-house"></i> Home </a> </li>
+                <li class="inf__informacion"><a href="{{ route('rusia') }}"><i class="fa-solid fa-map"></i> Rusia</a> </li>
+                <li class="inf__informacion"><a href="{{ route('nosotros') }}"><i class="fa-solid fa-users"></i> Nosotros</a> </li>
+                <li class="inf__informacion"><a href="{{ route('contacto') }}"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
+            </ul>
+        </div>
+        <p>Todos los derechos reservados 2023-2024 <br> opiti.online</p>
     </footer>
     <script src="{{ asset('js/app.js?0.4') }}"></script>
     <script src="{{ asset('js/rusia.js') }}"></script>

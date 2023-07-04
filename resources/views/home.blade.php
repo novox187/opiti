@@ -10,10 +10,11 @@
 @endsection
 
 @section('titulo')
-    | Estudia en Ruisa de la mano de los mejores
+    Estudia en Ruisa de la mano de los mejores
 @endsection
 @section('contenido')
     <main>
+        <h1 hidden> Estudios en rusia</h1>
         {{-- -------------------- --}}
         {{--       INICIO         --}}
         {{-- -------------------- --}}
@@ -45,7 +46,7 @@
         <section class="beneficios" name='beneficios'>
             <div class="contenedor__beneficios">
                 {{-- Asesoría personalizada. --}}
-                <div class="card__beneficio" data-aos="fade-right" >
+                <div class="card__beneficio" data-aos="fade-up">
                     <div class="imagen__beneficio">
                         <img class="img__beneficio" src="img/home/acesoria.webp" alt="imagen inicial">
                     </div>
@@ -56,7 +57,7 @@
                     </div>
                 </div>
                 {{-- Gestión del proceso de admisión. --}}
-                <div class="card__beneficio" data-aos="fade-right" data-aos-delay="300">
+                <div class="card__beneficio" data-aos="fade-up" data-aos-delay="300">
                     <div class="imagen__beneficio">
                         <img class="img__beneficio" src="img/home/admision.webp" alt="imagen inicial">
                     </div>
@@ -67,7 +68,7 @@
                     </div>
                 </div>
                 {{-- Tramitación del visado. --}}
-                <div class="card__beneficio" data-aos="fade-left"  data-aos-delay="300">
+                <div class="card__beneficio" data-aos="fade-up" data-aos-delay="400">
                     <div class="imagen__beneficio">
                         <img class="img__beneficio" src="img/home/visado.webp" alt="imagen inicial">
                     </div>
@@ -77,7 +78,7 @@
                     </div>
                 </div>
                 {{-- Curso de ruso con profesores rusos. --}}
-                <div class="card__beneficio" data-aos="fade-left" >
+                <div class="card__beneficio" data-aos="fade-up" data-aos-delay="500">
                     <div class="imagen__beneficio">
                         <img class="img__beneficio" src="img/home/profesores.webp" alt="imagen inicial">
                     </div>
@@ -90,7 +91,7 @@
             </div>
         </section>
         {{-- -------------------- --}}
-        {{--      Requisitos      --}}
+        {{--      Beneficios      --}}
         {{-- -------------------- --}}
 
         <section class="requisitos">
@@ -100,35 +101,50 @@
                 </h2>
                 <div class="reqisito__requisitos" data-aos="fade-down">
                     <h3 class="titulo__requisito">
-                        Que carrera quieres seguir.
+                         Educación de alta calidad.
                     </h3>
                     <p class="texto__requisito">
-                        Debes tener una idea de que carrera quiere seguir, ya que de eso dependera el costo de su estudio.
+                        Rusia es conocida por su sistema educativo riguroso y de alta calidad. Sus universidades y escuelas técnicas superiores se encuentran entre las mejores del mundo, ofreciendo programas académicos reconocidos internacionalmente.
                     </p>
                 </div>
                 <div class="reqisito__requisitos" data-aos="fade-down">
                     <h3 class="titulo__requisito">
-                        copia del documentos
+                        Variedad de programas de estudio.
                     </h3>
                     <p class="texto__requisito">
-                        Necesitamos una copia de todas las sabanas de notas desde Octavo de colegio hasta tercero de
-                        bachillerato.
+                        Rusia cuenta con una amplia gama de programas de estudio en diferentes disciplinas, desde ciencias y tecnología hasta artes y humanidades. Esto permite a los estudiantes encontrar un programa que se ajuste a sus intereses y metas profesionales.
                     </p>
                 </div>
                 <div class="reqisito__requisitos" data-aos="fade-down">
                     <h3 class="titulo__requisito">
-                        Pasaporte
+                        Costo de vida asequible.
                     </h3>
                     <p class="texto__requisito">
-                        Se requiere de un pasaporte con una fecha de caducidad minima de 3 años.
+                         Aunque las tasas de matrícula pueden variar dependiendo de la universidad y el programa, en general, el costo de vida en Rusia es más bajo en comparación con otros países europeos o norteamericanos. Esto hace que sea más accesible para los estudiantes internacionales.
                     </p>
                 </div>
                 <div class="reqisito__requisitos" data-aos="fade-down">
                     <h3 class="titulo__requisito">
-                        Pasaporte Escaneado
+                        Experiencia multicultural.
                     </h3>
                     <p class="texto__requisito">
-                        Tambien necesitaremos el pasaporte escaneado para hacer la traduccion de el.
+                         Estudiar en Rusia brinda la oportunidad de sumergirse en una cultura rica y diversa. Los estudiantes internacionales tienen la oportunidad de interactuar con personas de diferentes países y culturas, lo que les permite desarrollar habilidades interculturales y ampliar su perspectiva global.
+                    </p>
+                </div>
+                <div class="reqisito__requisitos" data-aos="fade-down">
+                    <h3 class="titulo__requisito">
+                        Oportunidades laborales
+                    </h3>
+                    <p class="texto__requisito">
+                        Rusia es un país con una economía en crecimiento y ofrece diversas oportunidades laborales para los graduados internacionales. Estudiar en Rusia puede proporcionar una ventaja competitiva en el mercado laboral global.
+                    </p>
+                </div>
+                <div class="reqisito__requisitos" data-aos="fade-down">
+                    <h3 class="titulo__requisito">
+                        Patrimonio cultural e histórico
+                    </h3>
+                    <p class="texto__requisito">
+                        Rusia es conocida por su rica historia y patrimonio cultural. Estudiar en este país brinda la oportunidad de explorar lugares históricos, visitar museos y experimentar la cultura rusa de primera mano.
                     </p>
                 </div>
             </div>
@@ -149,6 +165,47 @@
                     <a class="boton__contacto" href="{{ route('contacto') }}">Contacto</a>
                 </div>
             </div>
+        </section>
+
+        {{-- -------------------- --}}
+        {{--         Gastos       --}}
+        {{-- -------------------- --}}
+
+        <section class="gastos">
+            <h2 class="titulo__gastos" data-aos="fade-right">Gastos para vivir en Rusia.</h2>
+            <div class="contenedor__gastos">
+                <div class="gasto__gastos" data-aos="zoom-in">
+                    <i class="icon__gastos fa-solid fa-house"></i>
+                    <p class="descripcion__gastos"> Costo promedio vivienda mensual</p>
+                    <strong class="precio__gastos">10$ dolares</strong>
+                </div>
+                <div class="gasto__gastos" data-aos="zoom-in">
+                    <i class="icon__gastos fa-solid fa-burger "></i>
+                    <p class="descripcion__gastos">Costo promedio alimentacion mensual</p>
+                    <strong class="precio__gastos">150$ dolares</strong>
+                </div>
+                <div class="gasto__gastos" data-aos="zoom-in">
+                    <i class="icon__gastos fa-solid fa-building-columns"></i>
+                    <p class="descripcion__gastos">Costo promedio semestral de carrera</p>
+                    <strong class="precio__gastos">980$ dolares</strong>
+                </div>
+                <div class="gasto__gastos" data-aos="zoom-in">
+                    <i class="icon__gastos fa-solid fa-staff-snake"></i>
+                    <p class="descripcion__gastos">Costo promedio seguro médico anual</p>
+                    <strong class="precio__gastos">80$ dolares</strong>
+                </div>
+                <div class="gasto__gastos" data-aos="zoom-in">
+                    <i class="icon__gastos fa-solid fa-building-user"></i>
+                    <p class="descripcion__gastos">Costo promedio de apartamento</p>
+                    <strong class="precio__gastos">120$ dolares</strong>
+                </div>
+                <div class="gasto__gastos" data-aos="zoom-in">
+                    <i class="icon__gastos fa-solid fa-ruble-sign"></i>
+                    <p class="descripcion__gastos">Los precios barian dependiendo de la ciudad y del cambio de la moneda(rublo)</p>
+                </div>
+
+            </div>
+            
         </section>
         @push('scripts')
             {{-- Libreria PARTICLES --}}
