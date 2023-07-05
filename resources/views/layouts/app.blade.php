@@ -182,6 +182,7 @@
         </div>
         <p>Todos los derechos reservados 2023-2024 <br> opiti.online</p>
     </footer>
+    @stack('scripts')
     <script src="{{ asset('js/app.js?0.4') }}"></script>
     <script src="{{ asset('js/rusia.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
@@ -191,7 +192,7 @@
     <script>
         AOS.init();
     </script>
-    @stack('scripts')
+
     </main>
 </body>
 

@@ -10,10 +10,10 @@ var simplemaps_worldmap_mapdata = {
 	
 		//State defaults
 		state_description:   'Proximamente',
-		state_color: '#88A4BC',
-		state_hover_color: '#88A4BC',
+		state_color: '#2c2d2e',
+		state_hover_color: '#2c2d2e',
 		state_url: '',
-		border_size: 1.5,		
+		border_size: 1,		
 		all_states_inactive: 'no',
 		all_states_zoomable: 'no',		
 		
