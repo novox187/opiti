@@ -29,8 +29,8 @@ header {
     transition: 0.5s;
     height: 30px;
     z-index: 100000;
-    background-color: #fff;
-    border-bottom: #f41 1px dashed;
+    background-color: #f41;
+    /* border-bottom: #f41 5px solid; */
 
     & .contenedor__info{
         display: flex;
@@ -42,11 +42,11 @@ header {
 
         & .inf__info{
             list-style: none;
-            color: #f41;
+            color: #fff;
 
             & a{
                 text-decoration: none;
-                color: #f41;
+                color: #fff;
             }
         }
     }
@@ -57,7 +57,11 @@ header {
     width: 95%;
     border-radius: 15px 15px 0px 0px;
 }
-
+@media (max-width: 500px){
+    .info{
+        display: none;
+    }
+}
 .nav {
     min-width: 350px;
     display: flex;

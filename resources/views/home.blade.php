@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/home.css?0.3') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css?addColor') }}">
 @endpush
 
 

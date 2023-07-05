@@ -242,20 +242,20 @@
 
                 <div class="carousel__lista transporte__lista">
                     <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte1.webp" alt="Автобус / Bus">
+                        <img src="img/rusia/transporte/transporte1.webp" alt="Поезд / Tren">
+                        <p>Поезд / Tren</p>
+                    </div>
+                    <div class="carousel__elemento transporte__elemento">
+                        <img src="img/rusia/transporte/transporte2.webp" alt="Автобус / Bus">
                         <p>Автобус / Bus</p>
                     </div>
                     <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte2.webp" alt="Самокат / Scooter">
+                        <img src="img/rusia/transporte/transporte3.webp" alt="Такси / Taxi">
                         <p>Самокат / Scooter</p>
                     </div>
                     <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte3.webp" alt="Такси / Taxi">
+                        <img src="img/rusia/transporte/transporte4.webp" alt="Такси / Taxi">
                         <p>Такси / Taxi</p>
-                    </div>
-                    <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte4.webp" alt="Поезд / Tren">
-                        <p>Поезд / Tren</p>
                     </div>
                     <div class="carousel__elemento transporte__elemento">
                         <img src="img/rusia/transporte/transporte5.webp" alt="Поезд / Tren">
