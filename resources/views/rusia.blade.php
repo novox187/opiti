@@ -14,10 +14,16 @@
 @endsection
 
 @section('contenido')
+    {{-- ------------ --}}
+    {{--      MAP     --}}
+    {{-- ------------ --}}
     <section class="mapa" id="mapa">
         <div id="particles-js"></div>
         <div class="map" id="map"></div>
     </section>
+    {{-- ------------ --}}
+    {{--  DESCRIPCION --}}
+    {{-- ------------ --}}
     <section class="rusia__contenido" id="descripcion">
         <div class="contenedor__descripcion">
             <div class="rusia">
@@ -50,6 +56,45 @@
             </div>
 
         </div>
+    </section>
+    {{-- ------------ --}}
+    {{--    GALERIA   --}}
+    {{-- ------------ --}}
+    <section class="galeria">
+        <center><h1>Lugares top de Rusia</h1></center>
+        <div class="contenedor__galeria">
+            <div class="hexagon-gallery">
+                <div class="hexagon">
+                    <div class="hex" data-aos="fade-down-right">
+                        <img src="{{ asset('img/rusia/rusia1.webp') }}" alt="">
+                    </div>
+                    <div class="hex" data-aos="fade-down-left">
+                        <img src="{{ asset('img/rusia/rusia2.webp') }}" alt="">
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="hex" data-aos="fade-right">
+                        <img src="{{ asset('img/rusia/rusia3.webp') }}" alt="" >
+                    </div>
+                    <div class="hex" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="{{ asset('img/rusia/rusia4.webp') }}" alt="">
+                    </div>
+                    <div class="hex" data-aos="fade-left">
+                        <img src="{{ asset('img/rusia/rusia5.webp') }}" alt="">
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="hex" data-aos="fade-up-right">
+                        <img src="{{ asset('img/rusia/rusia7.webp') }}" alt="" >
+                    </div>
+                    <div class="hex" data-aos="fade-up-left">
+                        <img src="{{ asset('img/rusia/rusia8.webp') }}" alt="" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </section>
     @push('scripts')
         {{-- Libreria PARTICLES --}}
