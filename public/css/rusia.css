@@ -158,7 +158,7 @@
 .contenedor__galeria {
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    min-height: 53em;
     max-height: 100vh;
     overflow: hidden;
 
