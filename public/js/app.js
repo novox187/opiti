@@ -2,10 +2,19 @@
 const menu = document.querySelector('.menu');
 const desplegable = document.querySelector('.nav_mobile')
 
+
 window.addEventListener("scroll", function () {
     var header = document.querySelector(".nav");
     header.classList.toggle("activo", window.scrollY > 0);
+
 })
+
+window.addEventListener("scroll", function () {
+    var info = document.querySelector(".info");
+    info.classList.toggle("info_activo", window.scrollY > 0);
+
+})
+
 
 window.addEventListener("scroll", function () {
     var separador = document.querySelector(".separador");

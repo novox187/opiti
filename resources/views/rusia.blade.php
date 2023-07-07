@@ -14,272 +14,286 @@
 @endsection
 
 @section('contenido')
-    <Section name='rusia'>
-        <div class="rusia">
-            <div class="rusia__eslogan">
-                <div class="rusia__slogan__center" data-aos="fade-right">
-                    <h1 class="rusia__titulo">Conoce un poco de la belleza de Rusia.</h1>
-                    <p class="rusia__descripcion">Rusia, el país más grande del mundo, ocupa una décima parte de toda la
-                        tierra en la Tierra. Abarca 11
-                        zonas horarias en dos continentes (Europa y Asia) y tiene costas en tres océanos (el Atlántico, el
-                        Pacífico y el Ártico). </br></br>
-                        El paisaje ruso varía desde el desierto hasta la costa congelada, desde altas montañas hasta
-                        pantanos gigantes. Gran parte de Rusia está formada por llanuras onduladas y sin árboles llamadas
-                        estepas. Siberia, que ocupa tres cuartas partes de Rusia, está dominada por extensos bosques de
-                        pinos llamados taigas.</br></br>
+    {{-- ------------ --}}
+    {{--      MAP     --}}
+    {{-- ------------ --}}
+    <section class="mapa" id="mapa">
+        <div id="particles-js"></div>
+        <div class="map" id="map"></div>
+    </section>
+    {{-- ------------ --}}
+    {{--  DESCRIPCION --}}
+    {{-- ------------ --}}
+    <section class="rusia__contenido" id="descripcion">
+        <div class="contenedor__descripcion">
+            <div class="rusia">
+                <div class="rusia__eslogan">
+                    <div class="rusia__slogan__center" data-aos="fade-right">
+                        <h1 class="rusia__titulo">Conoce un poco de la belleza de Rusia.</h1>
+                        <p class="rusia__descripcion">Rusia, el país más grande del mundo, ocupa una décima parte de toda la
+                            tierra en la Tierra. Abarca 11
+                            zonas horarias en dos continentes (Europa y Asia) y tiene costas en tres océanos (el Atlántico,
+                            el
+                            Pacífico y el Ártico). </br></br>
+                            El paisaje ruso varía desde el desierto hasta la costa congelada, desde altas montañas hasta
+                            pantanos gigantes. Gran parte de Rusia está formada por llanuras onduladas y sin árboles
+                            llamadas
+                            estepas. Siberia, que ocupa tres cuartas partes de Rusia, está dominada por extensos bosques de
+                            pinos llamados taigas.</br></br>
 
-                        Rusia tiene alrededor de 100.000 ríos, incluidos algunos de los más largos y poderosos del mundo.
-                        También tiene muchos lagos, incluidos los dos más grandes de Europa: Ladoga y Onega. El lago Baikal
-                        en Siberia contiene más agua que cualquier otro lago en la Tierra.
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="rusia__img__contenedor" data-aos="fade-left">
-                <img class="rusia__img" src="img/rusia/inicio2.webp" alt="imagen inicial">
-            </div>
-        </div>
-    </Section>
-
-    <section>
-        <div class="contenedor">
-            <!-- RUSIA -->
-            <div class="carousel  izquierda"data-aos="fade-up">
-
-                <div class="carousel__contenedor rusia__contenedor">
-
-                    <button aria-label="Anterior" class="carousel__anterior rusia__anterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-
-                    <div class="carousel__lista rusia__lista">
-                        <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia1.webp" alt="Catedral de San Basilio en Moscú">
-                            <p>Catedral de San Basilio en Moscú</p>
-                        </div>
-                        <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia2.webp" alt="Moscú city en Moscú">
-                            <p>Moscú city en Moscú</p>
-                        </div>
-                        <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia3.webp" alt="Madre Patria en Volgogrado">
-                            <p>Madre Patria en Volgogrado</p>
-                        </div>
-                        <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia4.webp" alt="Museo del Hermitage en San Petersburgo">
-                            <p>Museo del Hermitage en San Petersburgo</p>
-                        </div>
-                        <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia5.webp" alt="Centro Comercial Gum en Moscú">
-                            <p>Centro Comercial Gum en Moscú</p>
-                        </div>
-                        <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia7.webp" alt="Puente del palacio en San Petersburgo">
-                            <p>Puente del palacio en San Petersburgo</p>
-                        </div>
-                        <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia8.webp" alt="Parque 300 años en San Petersburgo">
-                            <p>Parque 300 años en San Petersburgo</p>
-                        </div>
-                        <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia9.webp" alt="Mezquita Kul Sharif en Kazan">
-                            <p>Mezquita Kul Sharif en Kazan </p>
-                        </div>
-                        <div class="carousel__elemento rusia__elemento">
-                            <img src="img/rusia/rusia10.webp" alt="Parque nacional Ládoga Skerries en Karelia">
-                            <p>Parque nacional Ládoga Skerries en Karelia</p>
-                        </div>
-                    </div>
-                    <div role="tablist" class="carousel__indicadores rusia__indicadores"></div>
-
-                    <button aria-label="Siguiente" class="carousel__siguiente rusia__siguiente">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-
-
-                </div>
-
-                <div class=" carousel__info ">
-                    <div class="carousel__center_informacion ">
-                        <h1>Lugares destacados de Rusia</h1>
-                        <p>Rusia se destaca por ser el país más extenso del mundo y se ubica entre el continente europeo y
-                            asiático. El idioma oficial es el ruso y se maneja el rublo como moneda. Su capital es Moscú y
-                            cuenta con una gran diversidad de nacionalidades que migran al país anualmente por lo que el
-                            idioma inglés es bastante común entre sus habitantes.
+                            Rusia tiene alrededor de 100.000 ríos, incluidos algunos de los más largos y poderosos del
+                            mundo.
+                            También tiene muchos lagos, incluidos los dos más grandes de Europa: Ladoga y Onega. El lago
+                            Baikal
+                            en Siberia contiene más agua que cualquier otro lago en la Tierra.
                         </p>
                     </div>
                 </div>
 
-            </div>
-
-            <!-- GASTRONOMIA -->
-            <!-- DERECHA -->
-            <div class="carousel gastronomia derecha" data-aos="fade-up">
-                <div class="carousel__contenedor gastronomia__contenedor">
-                    <button aria-label="Anterior" class="carousel__anterior gastronomia__anterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-
-                    <div class="carousel__lista gastronomia__lista">
-                        <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia1.webp" alt="Пельмени / Pelmeni">
-                            <p>Пельмени / Pelmeni</p>
-                        </div>
-                        <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia2.webp" alt="Гречка / Alforfón">
-                            <p>Гречка / Alforfón</p>
-                        </div>
-                        <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia3.webp" alt="Оливье / Ensalada rusa">
-                            <p>Оливье / Ensalada rusa</p>
-                        </div>
-                        <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia4.webp" alt="Квас / Kvas">
-                            <p>Квас / Kvas</p>
-                        </div>
-
-                        <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia5.webp" alt="Желе c мясом / Gelatina con carne">
-                            <p>Желе c мясом / Gelatina con carne</p>
-                        </div>
-
-                        <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia6.webp" alt="Борщ / Borch">
-                            <p>Борщ / Borch</p>
-                        </div>
-                        <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia7.webp" alt="Сырники / Syrniki">
-                            <p>Сырники / Syrniki</p>
-                        </div>
-                        <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia8.webp" alt="Солянка / Solyanka">
-                            <p>Солянка / Solyanka</p>
-                        </div>
-                        <div class="carousel__elemento gastronomia__elemento">
-                            <img src="img/rusia/gastronomia/gastronomia9.webp" alt="Вяленая рыба / Pescado seco">
-                            <p>Вяленая рыба / Pescado seco</p>
-                        </div>
-                    </div>
-
-                    <div role="tablist" class="carousel__indicadores gastronomia__indicadores"></div>
-
-                    <button aria-label="Siguiente" class="carousel__siguiente gastronomia__siguiente">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-
-
-                </div>
-
-                <div class=" carousel__info carousel__info_derecha">
-                    <div class="carousel__center_informacion carousel__center_informacion_derecha">
-                        <h1>Gastronomia Rusa</h1>
-                        <p>Al ser un pais multicultural se puede probar platos diversos, y muchas de las veces
-                            bastante exóticos, de muchos pueblos: empezando con el dulce tártaro, chak-chak (postre de
-                            masa con miel) hasta la stroganina de Yakutia (pescado o carne recién congelados). Pero en
-                            cualquier rincón del país puedes encontrar los platos típicos de la cocina rusa.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- CLIMA -->
-        <!-- DERECHA -->
-        <div class="carousel clima " data-aos="fade-up">
-            <div class="carousel__contenedor clima__contenedor">
-                <button aria-label="Anterior" class="carousel__anterior clima__anterior">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-
-                <div class="carousel__lista clima__lista">
-                    <div class="carousel__elemento clima__elemento">
-                        <img src="img/rusia/clima/clima1.webp" alt="Зима / Invierno">
-                        <p>Зима / Invierno</p>
-                    </div>
-                    <div class="carousel__elemento clima__elemento">
-                        <img src="img/rusia/clima/clima2.webp" alt="Весна / Primavera">
-                        <p>Весна / Primavera</p>
-                    </div>
-                    <div class="carousel__elemento clima__elemento">
-                        <img src="img/rusia/clima/clima4.webp" alt="Лето / Verano">
-                        <p>Лето / Verano</p>
-                    </div>
-                    <div class="carousel__elemento clima__elemento">
-                        <img src="img/rusia/clima/clima3.webp" alt="Осень / Otoño">
-                        <p>Осень / Otoño</p>
-                    </div>
-                </div>
-
-                <button aria-label="Siguiente" class="carousel__siguiente clima__siguiente">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-
-                <div role="tablist" class="carousel__indicadores clima__indicadores"></div>
-            </div>
-
-            <div class=" carousel__info ">
-                <div class="carousel__center_informacion">
-                    <h1>Clima</h1>
-                    <p>La mayor parte del país tiene el clima moderado que se caracteriza por un tiempo bastante agradable.
-                        Según el informe del Centro Hidrometeorológico de Rusia, en su mayoría las temperaturas de Rusia van
-                        subiendo, por ejemplo, las famosas heladas en la parte Central del país últimamente no son muy
-                        frecuentes.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- TRANSPORTE -->
-        <!-- IZQUIERDA -->
-        <div class="carousel transporte derecha" data-aos="fade-up">
-
-            <div class="carousel__contenedor transporte__contenedor">
-
-                <button aria-label="Anterior" class="carousel__anterior transporte__anterior">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-
-                <div class="carousel__lista transporte__lista">
-                    <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte1.webp" alt="Автобус / Bus">
-                        <p>Автобус / Bus</p>
-                    </div>
-                    <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte2.webp" alt="Самокат / Scooter">
-                        <p>Самокат / Scooter</p>
-                    </div>
-                    <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte3.webp" alt="Такси / Taxi">
-                        <p>Такси / Taxi</p>
-                    </div>
-                    <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte4.webp" alt="Поезд / Tren">
-                        <p>Поезд / Tren</p>
-                    </div>
-                    <div class="carousel__elemento transporte__elemento">
-                        <img src="img/rusia/transporte/transporte5.webp" alt="Поезд / Tren">
-                        <p>Поезд / Tren</p>
-                    </div>
-                </div>
-
-                <button aria-label="Siguiente" class="carousel__siguiente transporte__siguiente">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-
-                <div role="tablist" class="carousel__indicadores transporte__indicadores"></div>
-
-            </div>
-
-            <div class=" carousel__info carousel__info_derecha">
-                <div class="carousel__center_informacion carousel__center_informacion_derecha">
-                    <h1>Transporte</h1>
-                    <p>El transporte en Rusia es confortable y moderno, pero sobretodo cuenta con la facilidad de realizar
-                        el pago online o personalmente con tarjeta y cuenta con aplicaciones para posibilitar el traslado de
-                        la persona, claro que pagar en efectivo sigue siendo una opción descartable.</p>
+                <div class="rusia__img__contenedor" data-aos="fade-left">
+                    <img class="rusia__img" src="img/rusia/inicio2.webp" alt="imagen inicial">
                 </div>
             </div>
 
         </div>
     </section>
+    {{--    ------------   --}}
+    {{--    GALERIA RUSIA  --}}
+    {{--    ------------   --}}
+    <section class="galeria">
+        <center>
+            <h1>Lugares top de Rusia</h1>
+        </center>
+        <div class="contenedor__galeria">
+            <div class="hexagon-gallery">
+                <div class="hexagon">
+                    <div class="hex" data-aos="fade-down-right">
+                        <img class="img__galeria" src="{{ asset('img/rusia/rusia1.webp') }}" alt="">
+                        <h4 class="nombre">Catedral de San Basilio en Moscú</h4>
+                    </div>
+                    <div class="hex" data-aos="fade-down-left">
+                        <img class="img__galeria" src="{{ asset('img/rusia/rusia2.webp') }}" alt="">
+                        <h4 class="nombre">Moscú city en Moscú</h4>
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="hex" data-aos="fade-right">
+                        <img class="img__galeria" src="{{ asset('img/rusia/rusia3.webp') }}" alt="">
+                        <h4 class="nombre">Madre Patria en Volgogrado</h4>
+                    </div>
+                    <div class="hex" data-aos="zoom-in" data-aos-delay="200">
+                        <img class="img__galeria" src="{{ asset('img/rusia/rusia4.webp') }}" alt="">
+                        <h4 class="nombre">Museo del Hermitage en San Petersburgo</h4>
+                    </div>
+                    <div class="hex" data-aos="fade-left">
+                        <img class="img__galeria" src="{{ asset('img/rusia/rusia5.webp') }}" alt="">
+                        <h4 class="nombre">Centro Comercial Gum en Moscú</h4>
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="hex" data-aos="fade-up-right">
+                        <img class="img__galeria" src="{{ asset('img/rusia/rusia7.webp') }}" alt="">
+                        <h4 class="nombre">Puente del palacio en San Petersburgo</h4>
+                    </div>
+                    <div class="hex" data-aos="fade-up-left">
+                        <img class="img__galeria" src="{{ asset('img/rusia/rusia8.webp') }}" alt="">
+                        <h4 class="nombre">Parque 300 años en San Petersburgo</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="item__mobile" data-aos="fade-down-right">
+                <img class="img__mobile" src="{{ asset('img/rusia/rusia1.webp') }}" alt="">
+                <h4 class="nombre__mobile">Catedral de San Basilio en Moscú</h4>
+            </div>
+            <div class="item__mobile" data-aos="fade-down-left">
+                <img class="img__mobile" src="{{ asset('img/rusia/rusia2.webp') }}" alt="">
+                <h4 class="nombre__mobile">Moscú city en Moscú</h4>
+            </div>
+            <div class="item__mobile" data-aos="fade-right">
+                <img class="img__mobile" src="{{ asset('img/rusia/rusia3.webp') }}" alt="">
+                <h4 class="nombre__mobile">Madre Patria en Volgogrado</h4>
+            </div>
+            <div class="item__mobile" data-aos="zoom-in" data-aos-delay="200">
+                <img class="img__mobile" src="{{ asset('img/rusia/rusia4.webp') }}" alt="">
+                <h4 class="nombre__mobile">Museo del Hermitage en San Petersburgo</h4>
+            </div>
+            <div class="item__mobile" data-aos="fade-left">
+                <img class="img__mobile" src="{{ asset('img/rusia/rusia5.webp') }}" alt="">
+                <h4 class="nombre__mobile">Centro Comercial Gum en Moscú</h4>
+            </div>
+            <div class="item__mobile" data-aos="fade-up-right">
+                <img class="img__mobile" src="{{ asset('img/rusia/rusia7.webp') }}" alt="">
+                <h4 class="nombre__mobile">Puente del palacio en San Petersburgo</h4>
+            </div>
+            <div class="item__mobile" data-aos="fade-up-left">
+                <img class="img__mobile" src="{{ asset('img/rusia/rusia8.webp') }}" alt="">
+                <h4 class="nombre__mobile">Parque 300 años en San Petersburgo</h4>
+            </div>
+        </div>
+    </section>
+
+    {{--  -------------------  --}}
+    {{--  GALERIA GASTRONOMIA  --}}
+    {{--  -------------------  --}}
+    <section id="gastronomia">
+
+        <h1 class="titulo__gastronomia">COMIDAS TIPICAS DE RUSIA</h1>
+
+        <div class="contenedor__gastronomia">
+            {{-- PELMENI --}}
+            <div class="imagen__gastronomia" id="imagen__gastronomia1">
+
+                <div class="expancion__img" id="expand1" onclick="cambiarTamano(1)"><i
+                        class="fa-solid fa-maximize" id="icon__expand1"></i></div>
+
+                <img class="img__gastronomia" src="{{ asset('img/rusia/gastronomia/gastronomia1.webp') }}"
+                    alt="Пельмени / Pelmeni">
+                <h4 class="nombre__gastronomia " id="nombre__gastronomia1" onclick="mostrarInformacion(1)"> Пельмени /
+                    Pelmeni <span class="mas fa-fade"> mas..</span></h4>
+                <p class="inf__gastronomia" id="inf__gastronomia1"><i
+                        class="icon__inf fa-solid fa-xmark"onclick="ocultarInformacion(1)"></i>
+                    Пельмени / Pelmeni <br> <br>
+                    No se conocen estudios serios
+                    acerca del origen de este plato, pero es una creencia común que su origen se establece en Udmurtia es
+                    donde se denominaban como pelnyan, literalmente "oreja de pan" en el idioma nativo de la comarca.</p>
+            </div>
+            {{-- ALFORFON --}}
+            <div class="imagen__gastronomia" id="imagen__gastronomia2">
+
+                <div class="expancion__img" id="expand2" onclick="cambiarTamano(2)"><i class="fa-solid fa-maximize" id="icon__expand2"></i></div>
+
+                <img class="img__gastronomia" src="{{ asset('img/rusia/gastronomia/gastronomia2.webp') }}"
+                    alt="Гречка / Alforfón">
+                <h4 class="nombre__gastronomia" id="nombre__gastronomia2" onclick="mostrarInformacion(2)"> Гречка /
+                    Alforfón <span class="mas fa-fade"> mas..</span> </h4>
+                <p class="inf__gastronomia" id="inf__gastronomia2"> <i
+                        class="icon__inf fa-solid fa-xmark"onclick="ocultarInformacion(2)"></i>
+                    Гречка / Alforfón <br><br>
+                    El alforfón, más conocido como trigo sarraceno, es una planta
+                    herbácea de la familia de las poligonáceas que produce un tipo de grano de consumo humano y animal. Pese
+                    a ser considerado un cereal, no pertenece a la familia de las gramíneas, aun cuando su nombre pueda
+                    indicar lo contrario. Por tanto, no es un cereal. </p>
+            </div>
+            {{-- ENSALADA RUSA --}}
+            <div class="imagen__gastronomia" id="imagen__gastronomia3">
+
+                <div class="expancion__img" id="expand3" onclick="cambiarTamano(3)"><i class="fa-solid fa-maximize" id="icon__expand3"></i></div>
+
+                <img class="img__gastronomia" src="{{ asset('img/rusia/gastronomia/gastronomia3.webp') }}"
+                    alt="Оливье / Ensalada rusa">
+                <h4 class="nombre__gastronomia" id="nombre__gastronomia3" onclick="mostrarInformacion(3)"> Оливье /
+                    Ensalada rusa <span class="mas fa-fade"> mas..</span></h4>
+                <p class="inf__gastronomia" id="inf__gastronomia3"> <i
+                        class="icon__inf fa-solid fa-xmark"onclick="ocultarInformacion(3)"></i>
+                    Оливье / Ensalada rusa <br><br>
+                    La teoría que le otorga a Rusia el origen de este plato se basa en la figura poco rusa de Lucien Olivier
+                    (1838-1883), un cocinero belga de origen francés, que se hizo famoso en Moscú gracias a dispensar una
+                    ensalada en el restaurante -El Hermitage- que abrió en torno a 1860.
+                </p>
+            </div>
+            <div class="imagen__gastronomia" id="imagen__gastronomia4">
+
+                <div class="expancion__img" id="expand4" onclick="cambiarTamano(4)"><i class="fa-solid fa-maximize" id="icon__expand4"></i></div>
+
+                <img class="img__gastronomia" src="{{ asset('img/rusia/gastronomia/gastronomia4.webp') }}"
+                    alt="Квас / Kvas">
+                <h4 class="nombre__gastronomia" id="nombre__gastronomia4"onclick="mostrarInformacion(4)"> Квас / Kvas
+                    <span class="mas fa-fade"> mas..</span>
+                </h4>
+                <p class="inf__gastronomia" id="inf__gastronomia4"> <i
+                        class="icon__inf fa-solid fa-xmark"onclick="ocultarInformacion(4)"></i>
+                    Квас / Kvas <br><br>
+                    Es una bebida tradicional eslava y báltica. La bebida es dulce-ácida y se elabora a base de harina y
+                    malta (centeno, cebada) o de pan de centeno seco, a veces con la adición de hierbas buenas, miel,
+                    especias, también se prepara con remolacha, fruta, flores, hierbas. El kvas no solo se utiliza como
+                    bebida, sino que también es la base de las sopas frías clásicas de la cocina rusa, conocidas como
+                    "okroshka".
+                </p>
+            </div>
+            <div class="imagen__gastronomia" id="imagen__gastronomia5">
+
+                <div class="expancion__img" id="expand5" onclick="cambiarTamano(5)"><i class="fa-solid fa-maximize" id="icon__expand5"></i></div>
+
+                <img class="img__gastronomia" src="{{ asset('img/rusia/gastronomia/gastronomia5.webp') }}"
+                    alt="Желе c мясом / Gelatina con carne">
+                <h4 class="nombre__gastronomia" id="nombre__gastronomia5"onclick="mostrarInformacion(5)"> Желе c мясом /
+                    Gelatina con carne <span class="mas fa-fade"> mas..</span> </h4>
+                <p class="inf__gastronomia" id="inf__gastronomia5"> <i
+                        class="icon__inf fa-solid fa-xmark"onclick="ocultarInformacion(5)"></i>
+                    Желе c мясом / Gelatina con carne <br><br>
+                    Es un plato sustancioso de caldo de carne que se espesa hasta obtener una masa gelatinosa al enfriarse
+                    con trozos de carne . Conocido desde el siglo XVI . En la cocina rusa, es un aperitivo frío popular en
+                    la mesa festiva. Por lo general, la jalea se sirve con rábano picante o mostaza .
+                </p>
+            </div>
+            {{--             <div class="imagen__gastronomia">
+                <img class="img__gastronomia" src="{{ asset('img/rusia/gastronomia/gastronomia6.webp') }}"
+                    alt="Борщ / Borch">
+                <h4 class="nombre__gastronomia" id="nombre__gastronomia6"onclick="mostrarInformacion(6)"> Борщ / Borch
+                    <span class="mas fa-beat"> mas..</span> </h4>
+                <p class="inf__gastronomia" id="inf__gastronomia6"> <i
+                        class="icon__inf fa-solid fa-xmark"onclick="ocultarInformacion(6)"></i>
+                </p>
+            </div> --}}
+            <div class="imagen__gastronomia" id="imagen__gastronomia7">
+
+                <div class="expancion__img" id="expand7" onclick="cambiarTamano(7)"><i class="fa-solid fa-maximize" id="icon__expand7"></i></div>
+
+                <img class="img__gastronomia" src="{{ asset('img/rusia/gastronomia/gastronomia7.webp') }}"
+                    alt="Сырники / Syrniki">
+                <h4 class="nombre__gastronomia" id="nombre__gastronomia7"onclick="mostrarInformacion(7)"> Сырники /
+                    Syrniki <span class="mas fa-fade"> mas..</span> </h4>
+                <p class="inf__gastronomia" id="inf__gastronomia7">
+                    <i class="icon__inf fa-solid fa-xmark"onclick="ocultarInformacion(7)"></i>
+                    Сырники / Syrniki <br><br>
+                    Los syrniki (сырники) son un tipo de panqueques de origen ruso y ucraniano, que tradicionalmente se
+                    sirven para desayunar. También se pueden encontrar con el nombre de tvorozhniki (творо́жники) en
+                    referencia al queso Tvaroh (Творо́г) que se utiliza para prepararlos.
+                </p>
+            </div>
+            <div class="imagen__gastronomia" id="imagen__gastronomia8">
+
+                <div class="expancion__img" id="expand8" onclick="cambiarTamano(8)"><i class="fa-solid fa-maximize" id="icon__expand8"></i></div>
+            
+                <img class="img__gastronomia" src="{{ asset('img/rusia/gastronomia/gastronomia8.webp') }}"
+                    alt="Солянка / Solyanka">
+                <h4 class="nombre__gastronomia" id="nombre__gastronomia8"onclick="mostrarInformacion(8)"> Солянка /
+                    Solyanka <span class="mas fa-fade"> mas..</span> </h4>
+                <p class="inf__gastronomia" id="inf__gastronomia8">
+                    <i class="icon__inf fa-solid fa-xmark"onclick="ocultarInformacion(8)"></i>
+                    Солянка / Solyanka <br><br>
+                    Solianka o soljanka (en ruso y ucraniano соля́нка) es una especie de sopa densa de carne o pescado con
+                    vegetales encurtidos, muy especiada típica de la cocina rusa y de países de la ex-unión soviética como
+                    Ucrania y Letonia. Puede que fuera popular en Ucrania ya en el siglo xvii.
+                </p>
+            </div>
+            <div class="imagen__gastronomia" id="imagen__gastronomia9">
+
+                <div class="expancion__img" id="expand9" onclick="cambiarTamano(9)"><i class="fa-solid fa-maximize" id="icon__expand9"></i></div>
+
+                <img class="img__gastronomia" src="{{ asset('img/rusia/gastronomia/gastronomia9.webp') }}"
+                    alt="Вяленая рыба / Pescado seco">
+                <h4 class="nombre__gastronomia" id="nombre__gastronomia9"onclick="mostrarInformacion(9)"> Вяленая рыба /
+                    Pescado seco <span class="mas fa-fade"> mas..</span> </h4>
+                <p class="inf__gastronomia" id="inf__gastronomia9">
+                    <i class="icon__inf fa-solid fa-xmark"onclick="ocultarInformacion(9)"></i>
+                    Вяленая рыба / Pescado seco <br><br>
+                    El pescado tradicional en la cocina rusa no es tanto del mar como del agua dulce: lucio, carpa,
+                    esturión, perca, trucha, salmón.
+                    los rusos acostumbran comer pescado seco mientras comparten en bares con amigos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    @push('scripts')
+        {{-- Libreria PARTICLES --}}
+        <script src="{{ asset('js/librerias/particles/particles.min.js') }}"></script>
+        <script src="{{ asset('js/librerias/particles/particulas.js') }}"></script>
+        {{-- MAP --}}
+        <script src="{{ asset('js/librerias/map/mapdata.js') }}"></script>
+        <script src="{{ asset('js/librerias/map/worldmap.js') }}"></script>
+    @endpush
 @endsection

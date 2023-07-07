@@ -1,19 +1,46 @@
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
 
-/* INICIO */
+
+/* ------------------- */
+/*          MAP        */
+/* ------------------- */
+.map {
+    padding-top: 5em;
+    max-height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ------------------- */
+/*     DESCRIPCION     */
+/* ------------------- */
+.rusia__contenido {
+    min-width: 350px;
+    max-width: 100vw;
+    width: 100%;
+    margin-top: 3em;
+    /* padding-top: 7.5em; */
+
+}
+
 .rusia {
     display: grid;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: 50% 50%;
     align-items: center;
     gap: 1px;
     overflow: hidden;
     position: relative;
     padding-top: 5%;
     width: 100%;
-    /* height: 80vh; */
     transition: 0.7s;
     margin-bottom: 3%;
-    border-bottom: 3px double #f41;
     padding-bottom: 3%;
+    background-color: var(--secondary);
 }
 
 .rusia__eslogan {
@@ -27,7 +54,7 @@
     display: flex;
     position: absolute;
     flex-direction: column;
-    width:70%;
+    width: 70%;
     height: 100%;
     justify-content: center;
     right: 10%;
@@ -36,19 +63,20 @@
 }
 
 .rusia__titulo {
+    color: #fff;
     font-size: 250%;
-    margin-bottom: 30px;
+    margin-bottom: 1.5em;
     font-weight: bold;
 }
 
 .rusia__descripcion {
+    color: #fff;
     font-size: 100%;
     --tw-text-opacity: 1;
-    color: rgb(75 85 99 / var(--tw-text-opacity));
+    opacity: 0.5;
 }
 
 .rusia__img__contenedor {
-    background-color: #fff;
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ea3c12' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     border-radius: 5px;
     overflow: hidden;
@@ -68,219 +96,527 @@
     object-fit: cover;
     object-position: center;
 }
+
 /* QUERY */
 /* 1200px */
-@media (max-width:1200px){
-    .rusia{ 
+@media (max-width:1200px) {
+    .rusia {
         display: flex;
         padding: 2% 2%;
         flex-direction: column-reverse;
     }
-    .rusia__eslogan{
+
+    .rusia__eslogan {
         justify-content: center;
         align-items: center;
     }
-    .rusia__slogan__center{
+
+    .rusia__slogan__center {
         position: static;
         text-align: center;
         width: 70%;
     }
-    .rusia__img__contenedor{
+
+    .rusia__img__contenedor {
         width: 100%;
         padding: 20px 20px 20px 20px;
         height: 70%;
     }
-    .rusia__img{
+
+    .rusia__img {
         border-radius: 15px 15px 15px 15px;
-        object-position:top;
+        object-position: top;
     }
 }
 
-@media (max-width:400px){
-    .rusia__img__contenedor{
+@media (max-width:400px) {
+    .rusia__img__contenedor {
         width: 100%;
         padding: 0px 0px 0px 0px;
         height: 70%;
     }
-    .rusia__eslogan{
+
+    .rusia__eslogan {
         position: static;
     }
-    .rusia__slogan__center{
+
+    .rusia__slogan__center {
         width: 100%;
     }
+
     .rusia__titulo {
         font-size: 200%;
     }
+
     .rusia__descripcion {
         text-align: justify;
     }
 }
-/* --- --- CAROUSEL --- --- */
-.contenedor {
-	max-width: 100vw;
+
+/*    -------------------   */
+/*        GALERIA RUSIA     */
+/*    -------------------   */
+.contenedor__galeria {
+    display: grid;
+    place-items: center;
+    min-height: 53em;
+    max-height: 100vh;
     overflow: hidden;
-	width: 90%;
-    margin-right: 10em;
-}
+    margin-bottom: 3rem;
 
-.carousel {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	min-width: 100vw;
-	margin-bottom: 5em;
-}
-.derecha{
-	flex-direction:row-reverse;
-}
+    & .hexagon-gallery {
+        position: relative;
+        width: 85%;
+        height: 100%;
+        display: grid;
+        place-items: center;
 
-.carousel__contenedor {
-	display: block;
-	position: relative;
-	width: 44%;
-    /* height: 30rem; */
-	margin: 0 4em;
-}
+        & .hexagon {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: drop-shadow(2px 2px 5px) saturate(2);
 
-.carousel__anterior,
-.carousel__siguiente {
-	position: absolute;
-	display: block;
-	width: 30px;
-	height: 30px;
-	border: none;
-	top: calc(50% - 35px);
-	cursor: pointer;
-	line-height: 30px;
-	text-align: center;
-	background: none;
-	color: #000000;
-	opacity: 20%;
-}
+            & .hex {
+                width: 280px;
+                height: 310px;
+                display: flex;
+                margin: 20px;
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 75%, 0% 25%);
 
-.carousel__anterior:hover,
-.carousel__siguiente:hover {
-	opacity: 100%;
-}
+                & .img__galeria {
+                    filter: brightness(.5);
+                    width: 100%;
+                    object-fit: cover;
+                    transition: .3s;
+                }
 
-.carousel__anterior {
-	left: -30px;
-}
+                & .img__galeria:hover {
+                    transform: scale(1.1);
+                    filter: brightness(1);
+                }
 
-.carousel__siguiente {
-	right: -30px;
-}
+                & .nombre {
+                    position: absolute;
+                    top: -100px;
+                    width: 100%;
+                    text-align: center;
+                    padding: 5px;
+                    background-color: #ffffffa4;
+                    transition: 1s;
+                }
 
-.carousel__lista,
-.carousel__lista2 {
-    height: 15rem;
-	/* overflow: hidden; */
-}
+            }
 
-.carousel__elemento {
-	text-align: center;
-    /* height: 15rem; */
-}
-
-.carousel__elemento >img {
-	object-fit: cover;
-	object-position: center;
-	width: 90%;
-	height: 50%;
-}
+            & .hex:hover .nombre {
+                top: calc(50% - 6px);
+            }
 
 
-.carousel__indicadores .glider-dot {
-	display: block;
-	width: 30px;
-	height: 4px;
-	background: #0e0e0e;
-	opacity: .2;
-	border-radius: 0;
-}
-
-.carousel__indicadores .glider-dot:hover {
-	opacity: .5;
-}
-
-.carousel__indicadores .glider-dot.active {
-	opacity: 1;
-}
-
-.carousel__info {
-	position: relative;
-	width: 50%;
-}
-
-.carousel__center_informacion {
-	width: 65%;
-	text-align: justify;
-}
- .carousel__center_informacion_derecha {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	right: 0;
-	align-items: end;
-}
-
-
-@media (max-width: 800px) {
-
-	.contenido-principal {
-		flex-direction: column;
-	}
-
-	.contenido-principal>* {
-		width: 100%;
-	}
-
-    .carousel{
-        flex-direction: column;
+        }
     }
-    .carousel__contenedor{
-        width: 90%;
-        max-height: 13em;
-        overflow-y: hidden;
+
+    & .hexagon:nth-child(1) {
+        top: 0;
     }
-    .carousel__lista{
-        height: 13rem;
+
+    & .hexagon:nth-child(3) {
+        bottom: 0;
     }
-    .carousel__info{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+}
+
+/* media query */
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+    .contenedor__galeria {
+
+
+        & .hexagon-gallery {
+
+
+            & .hexagon {
+
+
+                & .hex {
+                    margin: 10px;
+                }
+            }
+        }
     }
-    .carousel__center_informacion{
-        width: 80%;
-        text-align: center;
-    }
-    .carousel__center_informacion > h1{
-        font-size: 150%;
-    }
-    .carousel__center_informacion > p{
-        text-align: justify;
-    }
-    .carousel__center_informacion_derecha{
-        position: static;
-        align-items: center;
-    }
-    .carousel__elemento>img{
-        margin-bottom: 5px;
-        height:43%;
-        width: 100%;
-        object-position: bottom;
-    }
-    .carousel__indicadores{
+}
+
+@media(max-width: 1010px) {
+    .contenedor__galeria {
         display: none;
     }
 }
-@media (max-width: 400px){
-    .carousel{
-        width: 70%;
+
+/*    -------------------   */
+/*        GALERIA RUSIA     */
+/*            MOBILE        */
+/*    -------------------   */
+.mobile {
+    width: 90%;
+    max-width: 899px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 133px);
+    grid-auto-rows: 200px;
+    justify-content: center;
+    gap: 1rem;
+    filter: drop-shadow(2px 2px 5px) saturate(2);
+
+    & .item__mobile {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 75%, 0% 25%);
+        grid-column: span 2;
+        height: 283px;
+
+
+        & img {
+            filter: brightness(.5);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s;
+        }
+
+        & img:hover {
+            transform: scale(1.1);
+            filter: brightness(1);
+        }
+
+        & .nombre__mobile {
+            position: absolute;
+            top: -100px;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            background-color: #ffffffa4;
+            transition: 1s;
+        }
     }
-    .carousel__contenedor{
-        width:65%;
+
+    & .item__mobile:hover .nombre__mobile {
+        top: calc(50% - 6px);
     }
+
+    & .item__mobile:first-of-type {
+        grid-column: 2 / span 2;
+    }
+}
+
+/* media Query */
+@media screen and (min-width:270px) and (max-width:504px) {
+    .mobile {
+        grid-auto-rows: 283px;
+
+        & .item__mobile:first-of-type {
+            grid-column: 1 / span 2;
+        }
+    }
+
+}
+
+@media screen and (min-width:505px) and (max-width:685px) {
+    .mobile {
+        & .item__mobile:nth-of-type(odd) {
+            grid-column: 2 / span 2;
+        }
+    }
+
+}
+
+@media screen and (min-width:686px) and (max-width:862px) {
+    .mobile {
+        & .item__mobile:nth-of-type(3n + 1) {
+            grid-column: 2 / span 2;
+        }
+    }
+
+}
+
+@media screen and (min-width:863px) and (max-width:1038px) {
+    .mobile {
+        & .item__mobile:nth-of-type(4n + 1) {
+            grid-column: 2 / span 2;
+        }
+    }
+
+}
+
+@media screen and (min-width:1039px) and (max-width:1215px) {
+    .mobile {
+        & .item__mobile:nth-of-type(5n + 1) {
+            grid-column: 2 / span 2;
+        }
+    }
+
+}
+
+@media screen and (min-width:1216px) and (max-width:1391px) {
+    .mobile {
+        & .item__mobile:nth-of-type(6n + 1) {
+            grid-column: 2 / span 2;
+        }
+    }
+
+}
+
+@media screen and (min-width:1391px) {
+    .mobile {
+        & .item__mobile:nth-of-type(6n + 1) {
+            grid-column: 2 / span 2;
+        }
+    }
+
+}
+
+@media (min-width:1011px) {
+    .mobile {
+        display: none;
+    }
+}
+
+/*        -------------------     */
+/*        GALERIA GASTRONOMIA     */
+/*        -------------------     */
+
+#gastronomia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 55rem;
+    background-color: var(--secondary);
+
+    & .titulo__gastronomia {
+        color: var(--text-primary);
+        font-weight: bold;
+        margin-bottom: 2em;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 2px solid var(--web-primary);
+    }
+
+    & .contenedor__gastronomia {
+        display: flex;
+        width: 95%;
+        min-height: 35rem;
+        max-height: 35rem;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--boxshadow);
+
+        & .imagen__gastronomia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 0px;
+            flex-grow: 1;
+            filter: drop-shadow(2px 2px 5px) saturate(2);
+            transition: all 1s;
+            overflow: hidden;
+
+            & .expancion__img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                inset: calc(50% -100px);
+                background-color: rgb(255, 255, 255, 0.35);
+                border-radius: 50%;
+                backdrop-filter: blur(5px);
+                z-index: 10000;
+                cursor: pointer;
+                transition: all .5s;
+
+                & i{
+                    font-size: 50px;
+                    color: var(--text-primary);
+                    
+                }
+
+            }
+            & .expancion__img:hover{
+                transform: scale(1.1);
+            }
+            & .expand__activo{
+                width: 35px;
+                height: 35px;
+                right: 10px;
+                top: 10px;
+                background-color: rgba(0, 0, 0, 0.35);
+                transition: all .5s;
+                & i{
+                    font-size: 15px;
+                    color: var(--text-primary);
+                    transition: all .5s;
+                }
+            }
+
+            & .img__gastronomia {
+                width: 100%;
+                height: 100%;
+                filter: brightness(.5);
+                object-fit: cover;
+                object-position: center;
+                transition: transform 1s;
+                /* transition-delay: .3s; */
+            }
+
+            & .nombre__gastronomia {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                inset: -200px;
+                width: 250px;
+                height: 100px;
+                text-align: center;
+                background-color: rgb(255, 255, 255, 0.35);
+                border-radius: 50px;
+                backdrop-filter: blur(5px);
+                transition: all 1s;
+                padding: 20px;
+                z-index: 1000;
+                cursor: pointer;
+
+                .mas {
+                    color: var(--text-secondary);
+                    margin-left: 10px;
+                    opacity: .5;
+                    font-size: 15px;
+                    
+                }
+            }
+            & .nombre__activo {
+                inset: calc(50% - 50px) calc(50% - 125px);
+            }
+            & .nombre__gastronomia:hover{
+                transform: scale(1.1);
+            }
+
+            & .inf__gastronomia {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                text-align: center;
+                width: 90%;
+                height: 90%;
+                inset: calc(50% -90%) calc(50% -95%);
+                opacity: 0;
+                background-color: rgb(255, 255, 255, 0.35);
+                border-radius: 50px;
+                backdrop-filter: blur(10px);
+                transition: all 1s;
+                padding: 20px;
+                color: #222222;
+                font-size: 20px;
+                text-align: justify;
+
+                & .icon__inf {
+                    position: absolute;
+                    top: 40px;
+                    right: 40px;
+                    font-size: 30px;
+                    cursor: pointer;
+                    transition: all .5s;
+                }
+
+                & .icon__inf:hover {
+                    transform: scale(1.1);
+                }
+
+            }
+
+            & .activo_info {
+                opacity: 1;
+            }
+
+
+        }
+
+        & .imagen__gastronomia:hover .img__gastronomia {
+            filter: brightness(1);
+            /* transform: scale(1.1); */
+        }
+
+        & .imagen__gastronomia:hover .inf__gastronomia {
+            display: flex;
+        }
+
+
+        & .imagen__activo {
+            cursor: crosshair;
+            width: 500px;
+        }
+
+    }
+}
+
+
+/* MEDIA QUERY */
+
+@media  (max-width: 1200px){
+    #gastronomia{    
+        & .contenedor__gastronomia{
+            max-height: none;
+            display: grid;
+            grid-template-columns:   repeat(
+                auto-fit,
+                minmax(500px,1fr)
+            );;
+            gap: 10px;
+            padding: 2em 0px;
+
+            & .imagen__gastronomia{
+                width: 100%;
+                height: 500px;
+                border-radius: 15px;
+    
+    
+            }
+      
+        }
+    }    
+}
+
+
+@media  (max-width: 540px){
+    #gastronomia{    
+        & .contenedor__gastronomia{
+            grid-template-columns:   repeat(
+                auto-fit,
+                minmax(300px,1fr)
+            );;
+
+            & .imagen__gastronomia{
+                height: 70vh;
+            }
+        }
+    }    
+}
+@media (max-width: 400){
+    #gastronomia{    
+        & .contenedor__gastronomia{
+            grid-template-columns:   repeat(
+                auto-fit,
+                minmax(150px,1fr)
+            );;
+
+            & .imagen__gastronomia{
+                height: 100vh;
+            }
+      
+        }
+    }    
 }

@@ -44,7 +44,7 @@
 }
 
 .inicio__eslogan .inicio__eslogan__center>h1 {
-    font-size: 400%;
+    font-size: 350%;
     margin-bottom: 30px;
     font-weight: bold;
 }
@@ -141,18 +141,18 @@
         gap: 30px;
         width: 100%;
         min-height: 80vh;
-        padding: 50px;
-        background-color: #13161c;
+        padding: 70px 50px;
+        background-color: #2c2d2e;
         position: relative;
         margin-bottom: 20vh;
 
         & .card__beneficio {
             display: flex;
             flex-direction: column;
-            height: 100%;
+            min-height: 10vh;
             overflow: hidden;
             background-color: #fff;
-            color: #13161c;
+            color: #2c2d2e;
             border-radius: 10px;
             padding: 10px;
             transition: all 0.5s;
@@ -185,10 +185,11 @@
                     margin-bottom: 10px;
                     color: #333333;
                 }
-                & .beneficio__decripcion{
+
+                & .beneficio__decripcion {
                     opacity: 0.8;
                 }
-                
+
             }
 
         }
@@ -196,37 +197,38 @@
     }
 
     & .contenedor__beneficios::after {
-        content: "HOLA";
+        content: "";
         position: absolute;
         width: 100%;
         height: 20vh;
-        background-color: #13161c;
+        background-color: #2c2d2e;
         bottom: -19.95vh;
         clip-path: polygon(50% 40%, 0 0, 100% 0);
     }
 }
 
 @media (max-width: 1200px) {
-    .beneficios .contenedor__beneficios{
+    .beneficios .contenedor__beneficios {
         grid-template-columns: auto auto;
 
         & .card__beneficio {
-            & .imagen__beneficio{
-                & .img__beneficio{
+            & .imagen__beneficio {
+                & .img__beneficio {
                     object-position: top;
                 }
             }
         }
     }
 }
-@media (max-width: 800px) {
-    .beneficios .contenedor__beneficios{
-        grid-template-columns: auto ;
-        padding: 20px;
 
+@media (max-width: 800px) {
+    .beneficios .contenedor__beneficios {
+        grid-template-columns: auto;
+        padding: 70px 20px;
+        margin-bottom: 5.5em;
         & .card__beneficio {
-            & .imagen__beneficio{
-                & .img__beneficio{
+            & .imagen__beneficio {
+                & .img__beneficio {
                     object-position: center;
                 }
             }
@@ -235,7 +237,7 @@
 }
 
 /* -------------------------- */
-/*           Requisitos       */
+/*           Beneficios       */
 /* -------------------------- */
 
 .requisitos {
@@ -244,6 +246,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100vw;
+
     & .contenedor__reqisitos {
         width: 80%;
 
@@ -275,7 +278,7 @@
 
     & .contenedor__contacto {
         width: 100%;
-        height: 40vh;
+        height: 50vh;
 
         & video {
             object-fit: cover;
@@ -287,7 +290,7 @@
             z-index: -1;
         }
 
-        & .info__contatco{
+        & .info__contatco {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -297,19 +300,19 @@
             color: #fff;
             min-width: 350px;
 
-            & .titulo__contacto{
+            & .titulo__contacto {
                 font-weight: bold;
                 margin-bottom: 0.5em;
                 text-align: center;
             }
 
-            & .texto__contacto{
+            & .texto__contacto {
                 opacity: 0.8;
                 margin-bottom: 1.5em;
-                
+
             }
 
-            & .boton__contacto{
+            & .boton__contacto {
                 background-color: #f41;
                 padding: 1em;
                 border-radius: 5px;
@@ -318,5 +321,124 @@
                 font-weight: bold;
             }
         }
+    }
+}
+
+/* -------------------------- */
+/*            Gastos          */
+/* -------------------------- */
+
+.gastos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 90vh;
+
+
+    & .titulo__gastos {
+        font-weight: bold;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 20px;
+        border-bottom: var(--web-primary) 5px solid;
+        padding: 10px;
+    }
+
+    & .contenedor__gastos {
+        display: grid;
+        grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(250px,1fr)
+            );
+            width: 60%;
+            gap: 30px 30px;
+
+        & .gasto__gastos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            padding: 3em 1em;
+            transition: all 0.5s;
+            width: 100%;
+            height: auto;
+            backdrop-filter: blur(2px);
+
+            & .icon__gastos {
+                font-size: 6rem;
+                margin-bottom: 10px;
+                color: var(--text-primary);
+            }
+
+            & .descripcion__gastos {
+                font-size: 1em;
+                text-align: center;
+                color: var(--text-primary);
+                margin-bottom: 5px;
+            }
+
+            & .precio__gastos {
+                color: var(--text-primary);
+            }
+        }
+
+        & .gasto__gastos:hover {
+            transform: scale(1.1);
+        }
+
+        & .gasto__gastos:nth-child(even) {
+            background-color: hwb(13 20% 1% / 0.35);
+            
+
+            /* ff7451 */
+            & .icon__gastos {
+                font-size: 6rem;
+                margin-bottom: 5px;
+                color: #2c2d2e;
+            }
+
+            & .descripcion__gastos {
+                font-size: 1em;
+                text-align: center;
+                color: #2c2d2e;
+            }
+
+            & .precio__gastos {
+                color: #2c2d2e;
+            }
+
+        }
+
+        & .gasto__gastos:nth-child(odd) {
+            background-color: rgba(44, 45, 46, 0.35);
+
+        }
+    }
+}
+
+ @media (max-width: 1400px) {
+    .gastos {
+        min-height: 80vh;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        & .contenedor__gastos {
+            width: 70%;
+        }
+
+    }
+}
+
+@media (max-width: 1100px) {
+    .gastos {
+
+        & .contenedor__gastos {
+            width: 85%;
+
+        }
+
     }
 }

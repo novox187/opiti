@@ -1,149 +1,56 @@
+function mostrarInformacion(id) {
+    var informacion = document.getElementById("inf__gastronomia" + id);
+    var nombre = document.getElementById("nombre__gastronomia" + id);
 
-window.addEventListener('load', function() {
-	var cantidad_estandar = 1;
-	var tamaño_mobile = 2;
-	var tamaño_grande = 3;
+    nombre.style.display = 'none';
 
-	/* RUSIA */
-	new Glider(document.querySelector('.rusia__lista'), {
-		slidesToShow: cantidad_estandar,
-		slidesToScroll: cantidad_estandar,
-		draggable: true,
-		dots: '.rusia__indicadores',
-		arrows: {
-			prev: '.rusia__anterior',
-			next: '.rusia__siguiente'
-		},
-		responsive: [{
-			// screens greater than >= 775px
-			breakpoint: 450,
-			settings: {
-				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: tamaño_mobile,
-				slidesToScroll: tamaño_mobile
-			}
-		}, {
-			// screens greater than >= 1024px
-			breakpoint: 1024,
-			settings: {
-				slidesToShow: tamaño_grande,
-				slidesToScroll: tamaño_grande
-			}
-		}]
-	});
+    informacion.classList.toggle("activo_info");
+}
+function ocultarInformacion(id) {
+    var informacion = document.getElementById("inf__gastronomia" + id);
+    var nombre = document.getElementById("nombre__gastronomia" + id);
 
-	/* GASTRONOMIA */
-	new Glider(document.querySelector('.gastronomia__lista'), {
-		slidesToShow: cantidad_estandar,
-		slidesToScroll: cantidad_estandar,
-		draggable: true,
-		dots: '.gastronomia__indicadores',
-		arrows: {
-			prev: '.gastronomia__anterior',
-			next: '.gastronomia__siguiente'
-		},
-		responsive: [{
-			// screens greater than >= 775px
-			breakpoint: 450,
-			settings: {
-				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: tamaño_mobile,
-				slidesToScroll: tamaño_mobile
-			}
-		}, {
-			// screens greater than >= 1024px
-			breakpoint: 800,
-			settings: {
-				slidesToShow: tamaño_grande,
-				slidesToScroll: tamaño_grande
-			}
-		}]
-	});
+    nombre.style.display = 'flex';
 
-	/* CULTURA */
-/* 	new Glider(document.querySelector('.cultura__lista'), {
-		slidesToShow: cantidad_estandar,
-		slidesToScroll: cantidad_estandar,
-		draggable: true,
-		dots: '.cultura__indicadores',
-		arrows: {
-			prev: '.cultura__anterior',
-			next: '.cultura__siguiente'
-		},
-		responsive: [{
-			// screens greater than >= 775px
-			breakpoint: 450,
-			settings: {
-				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: tamaño_mobile,
-				slidesToScroll: tamaño_mobile
-			}
-		}, {
-			// screens greater than >= 1024px
-			breakpoint: 800,
-			settings: {
-				slidesToShow: tamaño_grande,
-				slidesToScroll: tamaño_grande
-			}
-		}]
-	}); */
+    informacion.classList.remove("activo_info");
+}
 
-	/* clima */
-	new Glider(document.querySelector('.clima__lista'), {
-		slidesToShow: cantidad_estandar,
-		slidesToScroll: cantidad_estandar,
-		draggable: true,
-		dots: '.clima__indicadores',
-		arrows: {
-			prev: '.clima__anterior',
-			next: '.clima__siguiente'
-		},
-		responsive: [{
-			// screens greater than >= 775px
-			breakpoint: 450,
-			settings: {
-				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: tamaño_mobile,
-				slidesToScroll: tamaño_mobile
-			}
-		}, {
-			// screens greater than >= 1024px
-			breakpoint: 800,
-			settings: {
-				slidesToShow: tamaño_grande,
-				slidesToScroll: tamaño_grande
-			}
-		}]
-	});
+var imagenActual = null;
+
+function cambiarTamano(id) {
+  var informacion = document.getElementById("inf__gastronomia" + id);
+  var imagen_g = document.getElementById("imagen__gastronomia" + id);
+  var nombre = document.getElementById("nombre__gastronomia" + id);
+  var expand = document.getElementById("expand" + id);
+  var icon = document.getElementById("icon__expand" + id);
+
+  if (imagen_g.classList.contains('imagen__activo')) {
+
+    imagen_g.classList.remove('imagen__activo');
+    nombre.classList.remove("nombre__activo");
+
+    nombre.style.display = 'flex';
+
+    expand.classList.remove("expand__activo");
+    expand.classList.remove('fa-beat');
+    icon.classList.remove("fa-down-left-and-up-right-to-center");
+    icon.classList.add('fa-maximize');
 
 
-	/* TRANSPORTE */
-	new Glider(document.querySelector('.transporte__lista'), {
-		slidesToShow: cantidad_estandar,
-		slidesToScroll: cantidad_estandar,
-		draggable: true,
-		dots: '.transporte__indicadores',
-		arrows: {
-			prev: '.transporte__anterior',
-			next: '.transporte__siguiente'
-		},
-		responsive: [{
-			// screens greater than >= 775px
-			breakpoint: 450,
-			settings: {
-				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: tamaño_mobile,
-				slidesToScroll: tamaño_mobile
-			}
-		}, {
-			// screens greater than >= 1024px
-			breakpoint: 800,
-			settings: {
-				slidesToShow: tamaño_grande,
-				slidesToScroll: tamaño_grande
-			}
-		}]
-	});
+    informacion.classList.remove("activo_info");
 
+    imagenActual = null;
+  } else {
+    if (imagenActual) {
+      imagenActual.classList.remove('imagen__activo');
+    }
+    nombre.classList.add("nombre__activo")
+    imagen_g.classList.add('imagen__activo');
+    expand.classList.add('expand__activo');
+    expand.classList.add('fa-beat');
+    icon.classList.remove("fa-maximize");
+    icon.classList.add('fa-down-left-and-up-right-to-center');
 
-});
+    imagenActual = id;
+  }
+}
