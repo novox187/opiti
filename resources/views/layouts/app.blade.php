@@ -34,7 +34,7 @@
     <meta name="title" content="Opiti Estudia en Ruisa de la mano de los mejores">
     <meta name="description"
         content="Simplificamos el proceso de admisión y visado para que puedas cumplir tu sueño de estudiar en Rusia">
-    <meta name="keywords" content="Estudios en rusia, Universidades en rusia, estudiar en rusia">
+    <meta name="keywords" content="Estudios en rusia, Universidades en rusia, opiti">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Spanish">
@@ -42,21 +42,21 @@
     <meta name="author" content="Harrison Ochoa">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://opiti.online/" />
+    <meta property="og:url" content="https://opiti.ru/" />
     <meta property="og:title" content="Opiti Estudia en Ruisa de la mano de los mejores
 " />
     <meta property="og:description"
         content="Simplificamos el proceso de admisión y visado para que puedas cumplir tu sueño de estudiar en Rusia" />
-    <meta property="og:image" content="https://opiti.online/img/home/rusia.webp" />
+    <meta property="og:image" content="https://opiti.ru/img/home/rusia.webp" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://opiti.online/" />
+    <meta property="twitter:url" content="https://opiti.ru/" />
     <meta property="twitter:title" content="Opiti Estudia en Ruisa de la mano de los mejores
 " />
     <meta property="twitter:description"
         content="Simplificamos el proceso de admisión y visado para que puedas cumplir tu sueño de estudiar en Rusia" />
-    <meta property="twitter:image" content="https://opiti.online/img/home/rusia.webp" />
+    <meta property="twitter:image" content="https://opiti.ru/img/home/rusia.webp" />
 
     @yield('canonical')
 </head>
@@ -180,7 +180,7 @@
                 <li class="inf__informacion"><a href="{{ route('contacto') }}"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
             </ul>
         </div>
-        <p>Todos los derechos reservados 2023-2024 <br> opiti.online</p>
+        <p>Todos los derechos reservados 2023-2024 <br> opiti.ru</p>
     </footer>
     @stack('scripts')
     <script src="{{ asset('js/app.js?0.4') }}"></script>

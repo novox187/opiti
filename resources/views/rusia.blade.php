@@ -66,18 +66,18 @@
         </center>
         <div class="contenedor__galeria">
             <div class="hexagon-gallery">
-                <div class="hexagon">
-                    <div class="hex" data-aos="fade-down-right">
+                <div class="hexagon" data-aos="fade-up">
+                    <div class="hex">
                         <img class="img__galeria" src="{{ asset('img/rusia/rusia1.webp') }}" alt="">
                         <h4 class="nombre">Catedral de San Basilio en Moscú</h4>
                     </div>
-                    <div class="hex" data-aos="fade-down-left">
+                    <div class="hex">
                         <img class="img__galeria" src="{{ asset('img/rusia/rusia2.webp') }}" alt="">
                         <h4 class="nombre">Moscú city en Moscú</h4>
                     </div>
                 </div>
-                <div class="hexagon">
-                    <div class="hex" data-aos="fade-right">
+                <div class="hexagon" data-aos="fade-up">
+                    <div class="hex">
                         <img class="img__galeria" src="{{ asset('img/rusia/rusia3.webp') }}" alt="">
                         <h4 class="nombre">Madre Patria en Volgogrado</h4>
                     </div>
@@ -85,17 +85,17 @@
                         <img class="img__galeria" src="{{ asset('img/rusia/rusia4.webp') }}" alt="">
                         <h4 class="nombre">Museo del Hermitage en San Petersburgo</h4>
                     </div>
-                    <div class="hex" data-aos="fade-left">
+                    <div class="hex">
                         <img class="img__galeria" src="{{ asset('img/rusia/rusia5.webp') }}" alt="">
                         <h4 class="nombre">Centro Comercial Gum en Moscú</h4>
                     </div>
                 </div>
-                <div class="hexagon">
-                    <div class="hex" data-aos="fade-up-right">
+                <div class="hexagon" data-aos="fade-up">
+                    <div class="hex">
                         <img class="img__galeria" src="{{ asset('img/rusia/rusia7.webp') }}" alt="">
                         <h4 class="nombre">Puente del palacio en San Petersburgo</h4>
                     </div>
-                    <div class="hex" data-aos="fade-up-left">
+                    <div class="hex" >
                         <img class="img__galeria" src="{{ asset('img/rusia/rusia8.webp') }}" alt="">
                         <h4 class="nombre">Parque 300 años en San Petersburgo</h4>
                     </div>
@@ -103,31 +103,31 @@
             </div>
         </div>
         <div class="mobile">
-            <div class="item__mobile" data-aos="fade-down-right">
+            <div class="item__mobile" data-aos="fade-up">
                 <img class="img__mobile" src="{{ asset('img/rusia/rusia1.webp') }}" alt="">
                 <h4 class="nombre__mobile">Catedral de San Basilio en Moscú</h4>
             </div>
-            <div class="item__mobile" data-aos="fade-down-left">
+            <div class="item__mobile" data-aos="fade-up">
                 <img class="img__mobile" src="{{ asset('img/rusia/rusia2.webp') }}" alt="">
                 <h4 class="nombre__mobile">Moscú city en Moscú</h4>
             </div>
-            <div class="item__mobile" data-aos="fade-right">
+            <div class="item__mobile" data-aos="fade-up">
                 <img class="img__mobile" src="{{ asset('img/rusia/rusia3.webp') }}" alt="">
                 <h4 class="nombre__mobile">Madre Patria en Volgogrado</h4>
             </div>
-            <div class="item__mobile" data-aos="zoom-in" data-aos-delay="200">
+            <div class="item__mobile" data-aos="fade-up">
                 <img class="img__mobile" src="{{ asset('img/rusia/rusia4.webp') }}" alt="">
                 <h4 class="nombre__mobile">Museo del Hermitage en San Petersburgo</h4>
             </div>
-            <div class="item__mobile" data-aos="fade-left">
+            <div class="item__mobile" data-aos="fade-up">
                 <img class="img__mobile" src="{{ asset('img/rusia/rusia5.webp') }}" alt="">
                 <h4 class="nombre__mobile">Centro Comercial Gum en Moscú</h4>
             </div>
-            <div class="item__mobile" data-aos="fade-up-right">
+            <div class="item__mobile" data-aos="fade-up">
                 <img class="img__mobile" src="{{ asset('img/rusia/rusia7.webp') }}" alt="">
                 <h4 class="nombre__mobile">Puente del palacio en San Petersburgo</h4>
             </div>
-            <div class="item__mobile" data-aos="fade-up-left">
+            <div class="item__mobile" data-aos="fade-up">
                 <img class="img__mobile" src="{{ asset('img/rusia/rusia8.webp') }}" alt="">
                 <h4 class="nombre__mobile">Parque 300 años en San Petersburgo</h4>
             </div>

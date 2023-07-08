@@ -87,6 +87,7 @@ header {
     background-color: var(--primary);
     width: 100%;
     transition: 0.5s;
+    box-shadow: var(--boxshadow);
 
 }
 

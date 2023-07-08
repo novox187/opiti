@@ -83,7 +83,7 @@
                         <img class="img__beneficio" src="img/home/profesores.webp" alt="imagen inicial">
                     </div>
                     <div class="informacion__beneficio">
-                        <h1 class="beneficio__titulo">Curso de ruso con profesores rusos.</h1>
+                        <h1 class="beneficio__titulo">Curso de ruso con profesores nativos.</h1>
                         <p class="beneficio__decripcion">Opiti cuenta con la opción de un curso del idioma ruso que te dará
                             las bases necesarias para emprender tu viaje..</p>
                     </div>

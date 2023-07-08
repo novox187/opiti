@@ -10,6 +10,12 @@
 .contacto__titulo{
     width: 100%;
     text-align: center;
+    width: 400px;
+}
+.contacto__titulo > h1{
+    padding: 10px;
+    box-shadow: var(--boxshadow);
+    border-radius: 15px;
 }
 
 .contacto__contenedor {

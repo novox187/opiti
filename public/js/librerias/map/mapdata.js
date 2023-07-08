@@ -24,7 +24,7 @@ var simplemaps_worldmap_mapdata = {
         location_url: "",
         location_size: 5,
         location_type: "image", // circle, square, image
-        location_image_url: "https://opiti.online/public/img/rusia/clip.png",
+        location_image_url: "https://opiti.ru/public/img/rusia/clip.png",
         location_image_source: "", //name of image in the map_images folder
         location_border_color: "#FFFFFF",
         location_border: 5,

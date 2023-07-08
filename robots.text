@@ -33,7 +33,7 @@ User-agent: yahoo-blogs/v3.9
 Disallow: 
 User-agent: *
 Disallow: 
-Disallow: https://opiti.online/rusia
-Disallow: https://opiti.online/nosotros
-Disallow: https://opiti.online/contacto
-Sitemap: https://opiti.online/
+Disallow: https://opiti.ruble/rusia
+Disallow: https://opiti.ru/nosotros
+Disallow: https://opiti.ru/contacto
+Sitemap: https://opiti.ru/
