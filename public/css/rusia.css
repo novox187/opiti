@@ -52,11 +52,12 @@
 
 .rusia__slogan__center {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     flex-direction: column;
     width: 70%;
     height: 100%;
-    justify-content: center;
     right: 10%;
     margin-right: 5%;
 
@@ -74,6 +75,7 @@
     font-size: 100%;
     --tw-text-opacity: 1;
     opacity: 0.5;
+    padding: 10px;
 }
 
 .rusia__img__contenedor {
@@ -142,6 +144,7 @@
 
     .rusia__slogan__center {
         width: 100%;
+        right: 0;
     }
 
     .rusia__titulo {
@@ -381,10 +384,255 @@
 }
 
 /*        -------------------     */
-/*        GALERIA GASTRONOMIA     */
+/*              GALERIAS          */
 /*        -------------------     */
 
-#gastronomia {
+.titulo__galerias {
+    color: var(--text-primary);
+    font-weight: bold;
+    margin-bottom: 2em;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid var(--web-primary);
+}
+
+.titulo__galerias__blanco {
+    color: var(--text-secondary);
+    border-bottom: 2px solid var(--secondary);
+}
+
+
+.contenedor__galerias {
+    display: flex;
+    width: 95%;
+    min-height: 40rem;
+    max-height: 40rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    box-shadow: var(--boxshadow);
+
+    & .imagen__galerias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 0px;
+        flex-grow: 1;
+        filter: drop-shadow(2px 2px 5px) saturate(2);
+        transition: all 1s;
+        overflow: hidden;
+
+        & .expancion__img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            inset: calc(50% -100px);
+            background-color: rgb(255, 255, 255, 0.35);
+            border-radius: 50%;
+            backdrop-filter: blur(5px);
+            z-index: 10000;
+            cursor: pointer;
+            transition: all .5s;
+
+            & i {
+                font-size: 50px;
+                color: var(--text-primary);
+
+            }
+
+        }
+
+        & .expancion__img:hover {
+            transform: scale(1.1);
+        }
+
+        & .expand__activo {
+            width: 35px;
+            height: 35px;
+            right: 10px;
+            top: 10px;
+            background-color: rgba(0, 0, 0, 0.35);
+            transition: all .5s;
+
+            & i {
+                font-size: 15px;
+                color: var(--text-primary);
+                transition: all .5s;
+            }
+        }
+
+        & .img__galerias {
+            width: 100%;
+            height: 100%;
+            filter: brightness(.5);
+            object-fit: cover;
+            object-position: center;
+            transition: 1s;
+            /* transition-delay: .3s; */
+        }
+
+        & .nombre__galerias {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: -200px;
+            width: 250px;
+            height: 80px;
+            text-align: center;
+            background-color: rgb(255, 255, 255, 0.35);
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            transition: all 1s;
+            padding: 20px;
+            z-index: 1000;
+
+
+            .mas {
+                color: var(--text-secondary);
+                margin-left: 10px;
+                font-size: 15px;
+                transition: .5s;
+                transition-delay: .5s;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+
+        & .nombre__activo {
+            bottom: 10px;
+        }
+
+        & .nombre__galerias:hover {
+            transform: scale(1.1);
+
+            .mas {
+                transform: scale(1.2);
+
+
+            }
+        }
+
+        & .inf__galerias {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            text-align: center;
+            width: 90%;
+            height: 90%;
+            inset: calc(50% -90%) calc(50% -95%);
+            opacity: 0;
+            background-color: rgb(255, 255, 255, 0.35);
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            transition: all 1s;
+            padding: 20px;
+            color: #222222;
+            font-size: 20px;
+            text-align: justify;
+
+            & .icon__inf {
+                position: absolute;
+                top: 40px;
+                right: 40px;
+                font-size: 30px;
+                cursor: pointer;
+                transition: all .5s;
+            }
+
+            & .icon__inf:hover {
+                transform: scale(1.1);
+            }
+
+        }
+
+        & .activo_info {
+            opacity: 1;
+        }
+
+
+    }
+
+    & .imagen__galerias:hover .img__galerias {
+        filter: brightness(1);
+        /* transform: scale(1.1); */
+    }
+
+    & .imagen__galerias:hover .inf__galerias {
+        display: flex;
+    }
+
+
+    & .imagen__activo {
+        cursor: crosshair;
+        width: 500px;
+    }
+
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 1200px) {
+    .contenedor__galerias {
+        max-height: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,
+                minmax(500px, 1fr));
+        ;
+        gap: 10px;
+        padding: 2em 0px;
+
+        & .imagen__galerias {
+            width: 100%;
+            height: 500px;
+            border-radius: 15px;
+
+
+        }
+
+    }
+}
+
+
+
+@media (max-width: 540px) {
+    & .contenedor__galerias {
+        grid-template-columns: repeat(auto-fit,
+                minmax(300px, 1fr));
+        ;
+
+        & .imagen__galerias {
+            height: 70vh;
+        }
+    }
+}
+
+@media (max-width: 400) {
+    & .contenedor__galerias {
+        grid-template-columns: repeat(auto-fit,
+                minmax(150px, 1fr));
+        ;
+
+        & .imagen__galerias {
+            height: 100vh;
+        }
+
+    }
+}
+
+/*        -------------------     */
+/*           GALERIA CLIMA        */
+/*        -------------------     */
+
+#clima {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -392,231 +640,36 @@
     max-width: 100vw;
     min-height: 55rem;
     background-color: var(--secondary);
-
-    & .titulo__gastronomia {
-        color: var(--text-primary);
-        font-weight: bold;
-        margin-bottom: 2em;
-        padding: 10px;
-        text-align: center;
-        border-bottom: 2px solid var(--web-primary);
-    }
-
-    & .contenedor__gastronomia {
-        display: flex;
-        width: 95%;
-        min-height: 35rem;
-        max-height: 35rem;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: var(--boxshadow);
-
-        & .imagen__gastronomia {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            width: 0px;
-            flex-grow: 1;
-            filter: drop-shadow(2px 2px 5px) saturate(2);
-            transition: all 1s;
-            overflow: hidden;
-
-            & .expancion__img{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                width: 100px;
-                height: 100px;
-                inset: calc(50% -100px);
-                background-color: rgb(255, 255, 255, 0.35);
-                border-radius: 50%;
-                backdrop-filter: blur(5px);
-                z-index: 10000;
-                cursor: pointer;
-                transition: all .5s;
-
-                & i{
-                    font-size: 50px;
-                    color: var(--text-primary);
-                    
-                }
-
-            }
-            & .expancion__img:hover{
-                transform: scale(1.1);
-            }
-            & .expand__activo{
-                width: 35px;
-                height: 35px;
-                right: 10px;
-                top: 10px;
-                background-color: rgba(0, 0, 0, 0.35);
-                transition: all .5s;
-                & i{
-                    font-size: 15px;
-                    color: var(--text-primary);
-                    transition: all .5s;
-                }
-            }
-
-            & .img__gastronomia {
-                width: 100%;
-                height: 100%;
-                filter: brightness(.5);
-                object-fit: cover;
-                object-position: center;
-                transition:  1s;
-                /* transition-delay: .3s; */
-            }
-
-            & .nombre__gastronomia {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                inset: -200px;
-                width: 250px;
-                height: 100px;
-                text-align: center;
-                background-color: rgb(255, 255, 255, 0.35);
-                border-radius: 50px;
-                backdrop-filter: blur(5px);
-                transition: all 1s;
-                padding: 20px;
-                z-index: 1000;
-                cursor: pointer;
-
-                .mas {
-                    color: var(--text-secondary);
-                    margin-left: 10px;
-                    opacity: .5;
-                    font-size: 15px;
-                    
-                }
-            }
-            & .nombre__activo {
-                inset: calc(50% - 50px) calc(50% - 125px);
-            }
-            & .nombre__gastronomia:hover{
-                transform: scale(1.1);
-            }
-
-            & .inf__gastronomia {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                text-align: center;
-                width: 90%;
-                height: 90%;
-                inset: calc(50% -90%) calc(50% -95%);
-                opacity: 0;
-                background-color: rgb(255, 255, 255, 0.35);
-                border-radius: 50px;
-                backdrop-filter: blur(10px);
-                transition: all 1s;
-                padding: 20px;
-                color: #222222;
-                font-size: 20px;
-                text-align: justify;
-
-                & .icon__inf {
-                    position: absolute;
-                    top: 40px;
-                    right: 40px;
-                    font-size: 30px;
-                    cursor: pointer;
-                    transition: all .5s;
-                }
-
-                & .icon__inf:hover {
-                    transform: scale(1.1);
-                }
-
-            }
-
-            & .activo_info {
-                opacity: 1;
-            }
-
-
-        }
-
-        & .imagen__gastronomia:hover .img__gastronomia {
-            filter: brightness(1);
-            /* transform: scale(1.1); */
-        }
-
-        & .imagen__gastronomia:hover .inf__gastronomia {
-            display: flex;
-        }
-
-
-        & .imagen__activo {
-            cursor: crosshair;
-            width: 500px;
-        }
-
-    }
+    margin-bottom: 2rem;
 }
 
 
-/* MEDIA QUERY */
-
-@media  (max-width: 1200px){
-    #gastronomia{    
-        & .contenedor__gastronomia{
-            max-height: none;
-            display: grid;
-            grid-template-columns:   repeat(
-                auto-fit,
-                minmax(500px,1fr)
-            );;
-            gap: 10px;
-            padding: 2em 0px;
-
-            & .imagen__gastronomia{
-                width: 100%;
-                height: 500px;
-                border-radius: 15px;
-    
-    
-            }
-      
-        }
-    }    
+/*        -------------------     */
+/*        GALERIA GASTRONOMIA     */
+/*        -------------------     */
+#gastronomia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 55rem;
+    background-color: var(--primary);
+    margin-bottom: 2rem;
 }
 
 
-@media  (max-width: 540px){
-    #gastronomia{    
-        & .contenedor__gastronomia{
-            grid-template-columns:   repeat(
-                auto-fit,
-                minmax(300px,1fr)
-            );;
+/*        -------------------     */
+/*         GALERIA TRASPORTE      */
+/*        -------------------     */
 
-            & .imagen__gastronomia{
-                height: 70vh;
-            }
-        }
-    }    
-}
-@media (max-width: 400){
-    #gastronomia{    
-        & .contenedor__gastronomia{
-            grid-template-columns:   repeat(
-                auto-fit,
-                minmax(150px,1fr)
-            );;
-
-            & .imagen__gastronomia{
-                height: 100vh;
-            }
-      
-        }
-    }    
+#transporte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 55rem;
+    background-color: var(--secondary);
+    margin-bottom: 2rem;
 }

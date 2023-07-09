@@ -184,7 +184,6 @@
     </footer>
     @stack('scripts')
     <script src="{{ asset('js/app.js?0.4') }}"></script>
-    <script src="{{ asset('js/rusia.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     {{-- LIBRERIA AOS --}}
